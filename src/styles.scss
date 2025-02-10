@@ -50,9 +50,19 @@ body{
     width: 160px;
     background-color:rgb(112, 230, 28) ;
     cursor: pointer;
-
+   font-weight: bold;
     &:hover{
     background-color: rgb(151, 71, 255);
     transform: scale(1.1);
     }
+}
+
+.purpel{
+    color: rgb(151, 71, 255);;
+}
+
+.green{
+   color: rgb(112, 230, 28) ;
+   margin: 0px;
+   padding: 0px;
 }

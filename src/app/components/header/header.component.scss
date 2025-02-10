@@ -16,17 +16,27 @@
     justify-content: space-around;
     align-items: center;
     
-    gap: 30px;
+    gap: 20px;
 }
 
 .header-links{
     text-decoration: none;
     cursor: pointer;
     color: white;
+    padding: 10px;
+
+    &:hover{
+        color: greenyellow;
+        transform: translateY(-10px);
+       
+    }
 }
 
 .name{
     display: flex;
     align-items: center;
+    font-size: 24px;
     
 }
+
+
