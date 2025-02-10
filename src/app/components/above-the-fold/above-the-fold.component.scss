@@ -1,0 +1,53 @@
+.above-the-fold-section{
+    max-height: 100vh;
+    height: 100vh;
+    max-width: 100%;
+    background-color: rgba(136, 69, 69, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+             >.name-content{
+                 display: flex;
+                 margin-bottom: 30px;
+                 align-items: center;
+
+                 >.first-box{
+                    display: flex;
+                    justify-self: flex-end;
+                    padding-top: 20px;
+                   
+                    >.rotate{
+                        transform: rotate(270deg);
+                        margin: 0px;
+                    }
+                   
+                    font-weight: 100;
+                    font-size: 100px;
+                    margin: 0;
+                    
+                 }
+
+
+                >.second-box{
+                    margin: 0;
+
+                   
+                    >.name-title{
+                        font-size: 75px;
+                        
+                        >.h1-above{
+                            margin: 0px;
+                        }
+                    }
+
+                    >.job{
+                        color: rgb(151, 71, 255);
+                        font-size: 60px;
+                        margin: 0;
+                    }
+                }
+
+
+             }
+}
