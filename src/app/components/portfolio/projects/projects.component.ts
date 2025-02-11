@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+
+  joinImg:string = "assets/images/laptop-join-2.png"
+  PokedexImg:string = "assets/images/laptop-pokedex.png"
+  LocoImg:string = "assets/images/laptop-el-pollo-loco.png"
+
 }
