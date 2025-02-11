@@ -10,24 +10,34 @@
     src: url('assets/fonts/figtree-v6-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* figtree-500italic - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Figtree';
-    font-style: italic;
-    font-weight: 500;
-    src: url('assets/fonts/figtree-v6-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  //@font-face {
+  //  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  //  font-family: 'Figtree';
+  //  font-style: italic;
+  //  font-weight: 500;
+  //  src: url('assets/fonts/figtree-v6-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  //}
+
+
   /* figtree-800italic - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Figtree';
-    font-style: italic;
-    font-weight: 800;
-    src: url('assets/fonts/figtree-v6-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+//  @font-face {
+//    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//    font-family: 'Figtree';
+//    font-style: italic;
+//    font-weight: 800;
+//    src: url('assets/fonts/figtree-v6-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+//  }
+//
 
 
-
+  /* figtree-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 900;
+  src: url('assets/fonts/figtree-v6-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 
 
@@ -50,12 +60,50 @@ body{
     width: 160px;
     background-color:rgb(112, 230, 28) ;
     cursor: pointer;
-   font-weight: bold;
+   font-weight: bolder;
     &:hover{
     background-color: rgb(151, 71, 255);
     transform: scale(1.1);
     }
 }
+
+.button-purpel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  height: 55px;
+  width: 160px;
+  background-color: rgb(151, 71, 255);
+  cursor: pointer;
+ font-weight: bolder;
+  &:hover{
+    background-color:rgb(112, 230, 28) ;
+  transform: scale(1.1);
+  }
+}
+
+.button-transparent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  border: 1px solid rgb(112, 230, 28);
+  height: 55px;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+ font-weight: bolder;
+  &:hover{
+    background-color:rgb(112, 230, 28) ;
+  transform: scale(1.1);
+  }
+}
+
 
 .purpel{
     color: rgb(151, 71, 255);;
@@ -65,4 +113,18 @@ body{
    color: rgb(112, 230, 28) ;
    margin: 0px;
    padding: 0px;
+}
+
+.h2{
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.h3{
+  font-size: 46px;
+}
+
+.text{
+  font-size: 26px;
 }

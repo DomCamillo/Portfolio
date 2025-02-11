@@ -1,0 +1,38 @@
+
+.portfolio-section{
+    height: 70vh;
+}
+
+.portfolio-headline{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.portfolio-subtext{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.purpel-line-short{
+    height: 2px;
+    width: 100px;
+    background-color:  rgb(151, 71, 255);
+}
+.purpel-line-long{
+    height: 2px;
+    width: 400px;
+    background-color:  rgb(151, 71, 255);
+}
+
+
+.projects-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 100px;
+}

@@ -1,0 +1,125 @@
+.skills-section{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
+
+.skills-icon-container{
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.icon-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.blue-line{
+    height: 2px;
+    width: 300px;
+    background-color: aqua;
+}
+
+
+
+.skills-headline-div{
+    display: flex;
+   height: 150px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 400px;
+  
+}
+
+
+.skills-text-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+   
+ 
+}
+
+.skill-icon-text{
+    font-size: 26px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.icon-skills svg {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.HTML:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #c56308);
+
+}
+.CSS:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #0089f8);
+
+}
+.JavaScript:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #fffb00);
+
+}
+.TypeScript:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #0041f5);
+
+}
+.Angular:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #f50303);
+
+}
+.Firebase:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #e6a61d);
+
+}
+.Git:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #eeeeee);
+
+}
+.Rest-Api:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #afee03);
+
+}
+.Scrum:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #00fcef);
+
+}
+.Material-Design:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(3px 3px 3px  #c400f5);
+
+}
+
+.Bootstrap:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(4px 4px 4px  #691ac4);
+}

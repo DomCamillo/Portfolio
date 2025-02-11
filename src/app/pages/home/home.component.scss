@@ -4,7 +4,14 @@
 }
 
 .content{
-    max-width: 1800px; // oder 80%, je nach Design-Vorstellung
+    max-width: 2120px; // oder 80%, je nach Design-Vorstellung
     margin: 0 auto; // zentriert den Container
     padding: 0 20px; // sorgt für etwas Abstand an den Rände
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+}
+
+.max-width{
+    
 }

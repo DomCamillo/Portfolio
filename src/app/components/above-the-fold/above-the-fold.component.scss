@@ -1,7 +1,7 @@
 .above-the-fold-section{
     position: relative;
     max-height: 90vh;
-    height: 100vh;
+    height: 70vh;
     max-width: 100%;
     background-color: rgba(136, 69, 69, 0);
     display: flex;
@@ -94,7 +94,20 @@
                 }
             }
           
+ >.background-svg-green-left{
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: -1;
+    
+ }
 
+ >.background-svg-lightblue-right{
+    position: absolute;
+    right: 0;
+    top: 300px;
+    z-index: -1;
+ }
             
 }
 
