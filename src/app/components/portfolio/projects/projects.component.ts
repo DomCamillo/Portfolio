@@ -1,17 +1,28 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component ,NgModule, Input, Output, } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+ 
+    
 
+  constructor(){
+  
+  }
 
-  joinImg:string = "assets/images/laptop-join-2.png"
-  PokedexImg:string = "assets/images/laptop-pokedex.png"
-  LocoImg:string = "assets/images/laptop-el-pollo-loco.png"
+  @Input() projects:any[] = []
+ 
 
-}
+ 
+ 
+    
+  }
+
+ 
+

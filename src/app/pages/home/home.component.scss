@@ -4,7 +4,7 @@
 }
 
 .content{
-    max-width: 2120px; // oder 80%, je nach Design-Vorstellung
+    max-width: 1920px; // oder 80%, je nach Design-Vorstellung
     margin: 0 auto; // zentriert den Container
     padding: 0 20px; // sorgt für etwas Abstand an den Rände
     display: flex;
@@ -12,6 +12,59 @@
     gap: 250px;
 }
 
-.max-width{
-    
+.no-gap{
+    gap: 10px;
 }
+
+.footer{
+    width: 100vw;
+}
+
+.over-content{
+    position: relative;
+}
+
+.svg-green{
+position: absolute;
+top: 200px;
+left: 0px;
+z-index: -90;
+}
+
+.svg-lightblue-right{
+    position: absolute;
+    top: 800px;
+   right: 0px;
+   z-index: -90;
+}
+
+.svg-purpel-right{
+    position: absolute;
+    bottom: 1800px;
+   right: 0px;
+   z-index: -90;
+}
+
+
+.svg-lightblue-left{
+    position: absolute;
+    bottom: 3200px;
+   left: 0px;
+   transform: scale(-1, 1);
+   z-index: -90;
+}
+
+.svg-purpel-left{
+    position: absolute;
+    bottom: 200px;
+   left: 0px;
+ 
+   z-index: -90;
+}
+
+.svg-green-2{
+    position: absolute;
+    bottom: 1300px;
+    left: 0px;
+    z-index: -90;
+    }

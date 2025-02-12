@@ -1,17 +1,26 @@
 <section class="projects-section">
 
-<div class="project-image">
-    <img class="img" src="{{LocoImg}}" alt="">
-</div>
+@for(item of projects; track item; let i = $index){
 
-<div class="project-text-content">
-    
-    
-    <div><h3 class="purpel h3">El Polo Loco</h3></div>
-    <div><span class="green project-includes">JavaScript | HTML | CSS</span></div>
-    <div><span>A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss</span></div>
-    <div class="button-div"><button class="button-purpel">Lets play</button> <button class="button-transparent">Git</button></div>
+ <div class="singel-project"   [ngClass]="{ 'reverse': i % 2 !== 0 }" > 
 
+    <div class="project-image">
+        <img class="img" src="{{item.ProjectImg}}" alt="">
+    </div>
+    
+    <div class="project-text-content"  [ngClass]="{'flex-end' : i % 2 !== 0} " >
+        
+        
+        <div><h3 class="purpel h3">{{item.ProjectName}}</h3></div>
+        <div><span class="green project-includes">{{item.ProjectTech}}</span></div>
+        <div><span>{{item.ProjectDescription}}</span></div>
+        <div class="button-div"><button class="button-purpel">Test it!</button> <button class="button-transparent">Git</button></div>
+    
+    </div>   
 </div>
+    
+}
+
+
 
 </section>
