@@ -12,15 +12,24 @@
     padding: 50px;
 }
 
-.icon-skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-height: 200px;
-    width: 200px;
-    cursor: pointer;
-}
+
+
+/* @keyframes fadeInMove {
+    0% {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+
+
+
+
+
+
 
 .blue-line{
     height: 2px;
@@ -60,66 +69,155 @@
 
 
 
+.icon-skills{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 200px;
+    width: 200px;
+    cursor: pointer;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    
+}
 
+.icon-skills.visible {
+    opacity: 1; /* Sichtbar */
+    transform: translateY(0); /* Endposition */
+}
+
+.icon-skills:nth-child(1) { transition-delay: 0s; }
+.icon-skills:nth-child(2) { transition-delay: 0s; }
+.icon-skills:nth-child(3) { transition-delay: 0s; }
+.icon-skills:nth-child(4) { transition-delay: 0s; }
+.icon-skills:nth-child(5) { transition-delay: 0s; }
+
+.icon-skills:nth-child(6) { transition-delay: 0.3s; }
+.icon-skills:nth-child(7) { transition-delay: 0.3s; }
+.icon-skills:nth-child(8) { transition-delay: 0.3s; }
+.icon-skills:nth-child(9) { transition-delay: 0.3s; }
+.icon-skills:nth-child(10) { transition-delay: 0.3s; }
+
+
+.icon-skills:nth-child(11) { transition-delay: 0.6s; }
 
 
 
 .icon-skills svg {
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease , fill 0.3s ease;
 }
+
+.icon-skills svg path {
+    fill: white;                         /* Ursprüngliche Farbe */
+    transition: fill 0.3s ease;            
+}
+
 
 .HTML:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #ee811b);
-
+    filter: drop-shadow(1px 1px 1px  rgb(229, 83, 45));
+   
 }
+.icon-skills:hover .HTML path {
+    fill: rgb(229, 83, 45); 
+}
+
+
+
 .CSS:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #0089f8);
-
+    filter: drop-shadow(1px 1px 1px rgb(28, 118, 185));
 }
+.icon-skills:hover .CSS path {
+    fill: rgb(28, 118, 185); 
+}
+
+
+
 .JavaScript:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #fffb00);
-
+    filter: drop-shadow(1px 1px 1px  rgb(239, 216, 28));
 }
+.icon-skills:hover .JavaScript path {
+    fill: rgb(239, 216, 28); 
+}
+
+
+
+
 .TypeScript:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #0041f5);
-
+    filter: drop-shadow(1px 1px 1px  rgb(55, 124, 200));
 }
+.icon-skills:hover .TypeScript path {
+    fill: rgb(55, 124, 200); 
+}
+
+
 .Angular:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #f50303);
-
+    filter: drop-shadow(1px 1px 1px rgb(214, 0, 47));
 }
+.icon-skills:hover .Angular path {
+    fill:rgb(214, 0, 47); 
+}
+
+
 .Firebase:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #e6a61d);
-
+    filter: drop-shadow(1px 1px 1px rgb(255, 205, 50));
 }
+.icon-skills:hover .Firebase path {
+    fill: rgb(255, 205, 50); 
+}
+
+
 .Git:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #eeeeee);
-
+    filter: drop-shadow(1px 1px 1px  rgb(231, 79, 46));
 }
+.icon-skills:hover .Git path {
+    fill: rgb(231, 79, 46); 
+}
+
+
 .Rest-Api:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #afee03);
-
+    filter: drop-shadow(1px 1px 1px #afee03);
 }
+.icon-skills:hover .Rest-Api path {
+    fill: #afee03; 
+}
+
+
 .Scrum:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #00fcef);
-
+    filter: drop-shadow(1px 1px 1px #00fcef);
 }
+.icon-skills:hover .Scrum path {
+    fill: #00fcef; 
+}
+
+
 .Material-Design:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(3px 3px 3px  #c400f5);
-
+    filter: drop-shadow(1px 1px 1px rgb(209, 96, 231));
 }
+.icon-skills:hover .Material-Design path {
+    fill: rgb(209, 96, 231); 
+}
+
+
 
 .Bootstrap:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(4px 4px 4px  #691ac4);
+    filter: drop-shadow(1px 1px 1px  rgb(110, 16, 238));
 }
+.icon-skills:hover .Bootstrap path {
+    fill: rgb(110, 16, 238); 
+}
+
+

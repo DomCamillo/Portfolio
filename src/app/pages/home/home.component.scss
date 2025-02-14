@@ -25,11 +25,58 @@
 }
 
 .svg-green{
+    animation: pulse 40s infinite alternate ease-in-out;
 position: absolute;
-top: 200px;
+top: 100px;
 left: 0px;
 z-index: -90;
 }
+
+
+@keyframes pulse {
+    0% {
+      transform: translateY(-100);
+    }
+    100% {
+      transform: translateY(400px);
+    }
+  }
+
+
+  .svg-green-small{
+    animation: move 200s infinite alternate ease-in-out;
+    position: absolute;
+   top: -100px;
+   left: 400px;
+   z-index: -90;
+   filter:brightness(0.6);
+   overflow: hidden !important;
+  }
+
+  /* 
+  @keyframes move {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    20% {
+      transform: translate(-400px, 550px) rotate(45deg) scale(1.2);
+    }
+    40% {
+      transform: translate(250px, -150px) rotate(-30deg) scale(0.8);
+    }
+    60% {
+      transform: translate(-100px, 400px) rotate(60deg) scale(1.5);
+    }
+    80% {
+      transform: translate(200px, -100px) rotate(-45deg) scale(1);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 0.5;
+    }
+  } */
+
 
 .svg-lightblue-right{
     position: absolute;
