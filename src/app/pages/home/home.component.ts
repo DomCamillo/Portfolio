@@ -8,13 +8,14 @@ import { ProjectsComponent } from '../../components/portfolio/projects/projects.
 import { CommentsComponent } from '../../components/comments/comments.component';
 import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { ImpressumComponent } from '../impressum/impressum.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [HeaderComponent, AboveTheFoldComponent, AboutMeComponent, 
     SkillsComponent, PortfolioComponent, ProjectsComponent, 
-    CommentsComponent, ContactFormComponent, FooterComponent
+    CommentsComponent, ContactFormComponent, FooterComponent,ImpressumComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

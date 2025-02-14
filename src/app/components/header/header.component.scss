@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    font-size: 24px;
     gap: 20px;
 }
 
@@ -39,4 +39,14 @@
     
 }
 
+@media only screen and (max-width: 700px){
 
+    .h1{
+        font-size: 26px;
+    }
+    .links{
+        gap: 5px;
+        font-size: 18px;
+    }
+
+}
