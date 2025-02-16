@@ -1,10 +1,11 @@
 .projects-section{
 height: 120vh;
-width: 100%;
+width: 90%;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+
 }
 
 .project-image{
@@ -45,7 +46,7 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 500px;
     gap: 150px;
 }
@@ -56,4 +57,40 @@ flex-direction: column;
 
 .flex-end{
     align-items: flex-end;
+}
+
+@media only screen and (max-width: 1200px){
+    .h3{
+        font-size: 36px;
+    }
+    .singel-project{
+        gap: 50px;
+    }
+
+    .img{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1000px){
+.reverse{
+    padding-left: 10px;
+}
+.projects-section{
+    width: 100%;
+}
+}
+@media only screen and (max-width: 900px){
+.singel-project{
+    flex-direction: column;
+    height: 100vh;
+}
+}
+
+@media only screen and (max-width: 500px){
+
+
+}
+@media only screen and (max-width: 400px){
+
 }

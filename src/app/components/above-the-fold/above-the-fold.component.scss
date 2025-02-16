@@ -208,6 +208,45 @@ opacity: 0;
 
 }
 
+@media only screen and (max-width: 800px){
+/*  .above-the-fold-section{
+  height: 70vh;
+ } */
+}
 
+
+@media only screen and (max-width: 600px){
+  .job{
+    font-size: 25px;
+  }
+  .h1-above {
+    font-size: 35px;
+  }
+
+  .rotate{
+    font-size: 30px;
+  
+  }
+  .first-box{
+    padding-bottom: 20px;
+  }
+  .r{
+    margin: 0px;
+    height: 40px;
+    >p{
+      margin: 0;
+    }
+  }
+
+  .green-line{
+    width: 40px;
+  }
+  
+    .svg{
+      height: 25px;
+    }
+  
+
+} 
 
 

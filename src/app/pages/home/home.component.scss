@@ -14,9 +14,8 @@
    
 }
 
-.no-gap{
-    gap: 10px;
-}
+
+
 
 .footer{
     width: 100vw;
@@ -50,7 +49,7 @@ clip-path: inset(0px);
     animation: move 200s infinite alternate ease-in-out;
     position: absolute;
    top: -100px;
-   left: 400px;
+   left: 800px;
    z-index: -90;
    filter:brightness(0.6);
    overflow: hidden !important;
@@ -134,3 +133,17 @@ clip-path: inset(0px);
     left: 0px;
     z-index: -90;
     }
+
+
+    @media only screen and (max-width: 1000px){
+      .content{
+        max-width: 100%;
+        padding: 0px;
+        gap: 70px;
+      }
+    
+      .svg-green-small{
+      display: none;
+      }
+    }
+    

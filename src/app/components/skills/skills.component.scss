@@ -1,6 +1,6 @@
 .skills-section{
     display: flex;
-    height: 60vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -43,8 +43,8 @@
     display: flex;
    height: 150px;
     align-items: center;
-    justify-content: flex-start;
-    gap: 400px;
+    justify-content: space-between;
+    
   
 }
 
@@ -132,7 +132,7 @@
     filter: drop-shadow(1px 1px 1px rgb(28, 118, 185));
 }
 .icon-skills:hover .CSS path {
-    fill: rgb(28, 118, 185); 
+    fill: rgb(53, 160, 241); 
 }
 
 
@@ -220,4 +220,112 @@
     fill: rgb(110, 16, 238); 
 }
 
+@media only screen and (max-width: 1210px){
+    .text{
+        font-size: 23px;
+    }
+    .icon-skills{
+        width: 150px;
+    }
+    .skill-icon-text{
+        text-align: center;
+    }
+    .mobile-height{
+        height: 55px;
+        
+    }
+    .h2{
+        font-size: 75px;
+    }
+}
 
+@media only screen and (max-width: 1000px){
+
+    
+  
+
+    .skills-section{
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 130px;
+    }
+
+    .skills-icon-container{
+        width: 90%;
+        height: 100%;
+    }
+
+    .skills-text-container{
+        width: 90%;
+        padding-left: 25px;
+        height: 100%;
+
+    }
+    .skills-headline-div{
+       justify-content: flex-start;
+       gap: 20px;
+    }
+    
+    .skill-icon-text{
+        font-size: 23px;
+    }
+
+    .h2{
+        font-size: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .skills-section{
+        height: 120vh;
+    }
+    
+    .skills-headline-div{
+        gap: 10px;
+    }
+    .mobile-height{
+        height: 65px;
+        
+    }
+
+    .icon-skills{
+        width: 130px;
+    }
+    .skills-icon-container{
+  
+        width: 80%;
+      }
+   
+}
+@media only screen and (max-width:600px){
+    .skill-icon-text{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .icon-skills{
+        width: 100px;
+    }
+
+    .skills-icon-container{
+        padding: 5px;
+        width: 100%;
+      }
+      .mobile-height{
+        height: 45px;
+        
+    }
+      .skill-icon-text{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .text{
+            font-size: 16px;
+    }
+}

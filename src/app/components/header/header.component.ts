@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  openDropDownMenu(){
+    let container = document.getElementById("mobile-menu");
+    container?.classList.toggle("display-none")
+  }
 
+  closeDropDownMenu(){
+    let container = document.getElementById("mobile-menu");
+    container?.classList.add("display-none")
+  }
 }
