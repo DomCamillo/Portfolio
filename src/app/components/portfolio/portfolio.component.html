@@ -1,20 +1,28 @@
 <section class="portfolio-section">
-<div class="portfolio-headline">
-     <div class="purpel-line-short"></div> <h2 class="h2">Portfolio</h2> <div class="purpel-line-long"></div>
-     <br>
-     <br>
- </div>
- <div class="portfolio-subtext"><span>Explore a selection of my work - interact with the projects to see my sklills in action </span></div>
+
+    <div class="margin">                 
+
+        <div class="portfolio-headline">
+            <div class="purpel-line-short"></div> <h2 class="h2">Portfolio</h2> <div class="purpel-line-long"></div>
+            <br>
+            <br>
+         
+        </div>
+
+        <div class="portfolio-subtext"><span class="text padding">Explore a selection of my work - interact with the projects to see my sklills in action </span></div>
+       
+       
+
+    </div>
+
+ <div class="projects-content">
 
 
-<div class="projects-content">
-
-
- <app-projects [projects]="projects"> </app-projects>
+  <app-projects class="project-height" [projects]="projects"> </app-projects>
 
 
  
-</div>
+  </div>
 
 
 </section>
