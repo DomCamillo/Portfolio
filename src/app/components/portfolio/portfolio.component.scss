@@ -8,13 +8,13 @@
 
 .portfolio-headline{
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: center;
     justify-content: flex-start;
 }
 
 .portfolio-subtext{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
 
@@ -34,8 +34,8 @@
 
 
 .projects-content{
-    display: flex;
-    width: 100%;
+    display: flex;  
+    width: 90%;
     flex-direction: column;
     gap: 100px;
 }
@@ -48,7 +48,7 @@
 @media only screen and (max-width: 900px){
     .portfolio-section{
         gap: 100px;
-       
+       height: 190vh;
      }
      .padding{
         padding-left: 15px;
@@ -69,14 +69,15 @@
         justify-content: flex-start;
      }
 
-     .margin{
-        
-     }
+   
 }
 
 @media only screen and (max-width: 600px){
     .margin{
         margin-bottom: 150px;
+       }
+       .text{
+        font-size: 20px;
        }
 }
 @media only screen and (max-width: 450px){
@@ -86,4 +87,17 @@
     .margin{
         margin-bottom: 50px;
        }
+
+       .portfolio-section{
+        
+        height:200vh ;
+      
+     }
+}
+@media only screen and (max-width: 375px){
+    .portfolio-section{
+       
+        height:260vh ;
+      
+     }
 }

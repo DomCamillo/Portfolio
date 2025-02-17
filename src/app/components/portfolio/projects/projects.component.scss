@@ -54,6 +54,10 @@ flex-direction: column;
 .reverse {
     flex-direction: row-reverse;
 }
+.center{
+    justify-content: center;
+    align-items: center;
+}
 
 .flex-end{
     align-items: flex-end;
@@ -94,7 +98,7 @@ flex-direction: column;
  }
  .projects-section{
    gap: 100px;
-    height: 120vh;
+    
  }
  .project-image{
     height: 200px;
@@ -111,10 +115,7 @@ flex-direction: column;
 }
 }
 @media only screen and (max-width: 600px){
-    .singel-project{
-        margin-bottom: 100px;
-    }
-
+   
     .project-image{
         height: 200px;
     }
@@ -138,6 +139,9 @@ flex-direction: column;
     .projects-section{
         gap: 10px;
        justify-content: space-between;
+      }
+      .center-text{
+        text-align: center;
       }
 
 }

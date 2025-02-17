@@ -25,11 +25,12 @@
     cursor: pointer;
     color: white;
     padding: 10px;
+    transition : all 200ms ease-in-out ;
 
     &:hover{
         color: greenyellow;
         transform: translateY(-10px);
-       
+      
     }
 }
 
@@ -42,11 +43,20 @@
     margin-top: 100px;
     height: 50vh;
     background-color: rgb(65, 72, 86);
-
     display: flex;
      justify-content: center;
     align-items: center;
     z-index: 99999;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    pointer-events: none; 
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(10px);
+    pointer-events: auto; /* Klicks wieder aktivieren */
 }
 
 .mobile-links-container{

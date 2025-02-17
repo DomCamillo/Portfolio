@@ -18,8 +18,8 @@
 
 .about-me-text{
     max-width: 90%;
-    height: 40vh;
-    font-size: 26px;
+   
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
@@ -42,7 +42,7 @@
     align-items: flex-start;
     gap: 20px;
     transition: transform 2s ease-out, opacity 2s ease-out;
-    font-size: 26px;
+    font-size: 32px;
 
 }
 .icons {
@@ -106,9 +106,7 @@
 
 
  @media only screen and (max-width: 1200px){
-    .about-me-section{
-
-    }
+   
 
     .h2{
         font-size: 75px;
@@ -183,6 +181,12 @@
         top: -20px;
      }
  }
+ @media only screen and (max-width: 700px){
+    .about-me-section{
+        height: 120vh;
+     }
+ 
+ }
 
  @media only screen and (max-width: 600px){
 
@@ -208,6 +212,13 @@
 }
 
  }
+
+ @media only screen and (max-width: 450px){
+    .about-me-section{
+        height: 150vh;
+     }
+ 
+ }
     
  @media only screen and (max-width: 400px){
     .about-me-info{
@@ -230,4 +241,16 @@
      .h2{
         font-size: 30px;
     }
+
+    .about-me-section{
+        height: 120vh;
+     }
+ 
+ }
+
+ @media only screen and (max-width: 375px){
+    .about-me-section{
+        height: 150vh;
+     }
+ 
  }

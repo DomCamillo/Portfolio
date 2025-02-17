@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   openDropDownMenu(){
     let container = document.getElementById("mobile-menu");
-    container?.classList.toggle("display-none")
+    container?.classList.toggle("show")
   }
 
   closeDropDownMenu(){
