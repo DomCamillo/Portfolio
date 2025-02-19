@@ -259,3 +259,9 @@ opacity: 0;
   }
 }
 
+@media only screen and (max-width: 375px){
+  .above-the-fold-section {
+    height: 90vh;
+  }
+}
+

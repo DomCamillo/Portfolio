@@ -4,9 +4,9 @@
         <h1 class="h1"> <span class="purpel">D</span>omin<span class="green">i</span>c</h1>
         </div>
         <div class="links">
-            <div class="link-container"></div><a class="header-links" href="">About me</a>
-            <div class="link-container"></div><a class="header-links" href="">Skills</a>
-            <div class="link-container"></div><a class="header-links" href="">Portfolio</a>
+            <a class="header-links" (click)="scrollToSection($event, 'aboutMe')" >About me</a>
+            <a class="header-links" (click)="scrollToSection($event, 'skills')" >Skills</a>
+            <a class="header-links" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
         </div>
         <div (click)=" openDropDownMenu()" class="mobile-menu-icon ">
             <div class="mobile-menu-line" ></div>
@@ -15,10 +15,10 @@
         </div>
         <div class="drowp-down-menue  " id="mobile-menu">
             <div class="mobile-links-container">
-                <a class="links-mobile" href="">About me</a>
-                <a class="links-mobile" href="">Skills</a>
-                <a class="links-mobile" href="">Portfolio</a>
-                <a class="links-mobile" href="">Contact</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'aboutMe')">About me</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'skills')">Skills</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'contact')">Contact</a>
             </div>
         </div>
     </div>

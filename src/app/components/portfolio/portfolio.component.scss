@@ -1,9 +1,9 @@
 
-.portfolio-sectio{
-    height: 130vh;
+.portfolio-section{
+    height: 140vh;
     display: flex;
     flex-direction: column;
-
+    gap: 100px;
 }
 
 .portfolio-headline{
@@ -39,6 +39,13 @@
     flex-direction: column;
     gap: 100px;
 }
+
+
+ @media only screen and (max-height: 1000px){
+    .portfolio-section{
+        height: 160vh;
+    }
+ }
 
 @media only screen and (max-width: 1200px){
     .h2{
@@ -90,7 +97,14 @@
 
        .portfolio-section{
         
-        height:200vh ;
+        height:180vh ;
+     }
+}
+
+@media only screen and (max-width: 390px){
+    .portfolio-section{
+       
+        height:220vh ;
       
      }
 }
@@ -101,3 +115,14 @@
       
      }
 }
+
+/* @media only screen and (max-width: 1700px) and (max-height: 950px){
+    .portfolio-section{
+        height: 200vh;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        overflow-y: hidden;
+    }
+ }
+ */

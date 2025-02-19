@@ -15,7 +15,7 @@ export class SkillsComponent implements AfterViewInit {
   ngAfterViewInit() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            console.log(entry); 
+        
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible'); 
                 observer.unobserve(entry.target);
@@ -25,9 +25,16 @@ export class SkillsComponent implements AfterViewInit {
 
     const skillIcons = this.el.nativeElement.querySelectorAll('.icon-skills');
     skillIcons.forEach((icon: Element) => {
-        console.log(icon);
+        
         observer.observe(icon);
     });
 }
+scrollToContact(){
+    
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
 

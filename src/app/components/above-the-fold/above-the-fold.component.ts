@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './above-the-fold.component.scss'
 })
 export class AboveTheFoldComponent {
-
+  scrollToContact(){
+    
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

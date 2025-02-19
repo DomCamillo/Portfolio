@@ -82,6 +82,7 @@
     background-color:  rgb(20, 29, 47);
     border: 2px  rgb(151, 71, 255) solid;
     padding-left: 30px;
+    color: white;
     &:hover{
         cursor: pointer;
         filter: brightness(1.2);
@@ -91,6 +92,8 @@
  .input-text{
     resize:both;
     height: 150px;
+     padding-top: 10px;
+     width: 80%;
  }
 
  .checkbox{
@@ -117,6 +120,26 @@
 .text-link{
     text-decoration: none;
     color:rgb(151, 71, 255);
+}
+
+.message-fail-text{
+    color: red;
+}
+.message-success-text{
+    color: rgb(64, 255, 47);
+}
+
+@media only screen and (max-width: 1440px) and (max-height: 2560px){
+    .contact-section{
+        height: 30vh;
+    }
+    .text-content{
+        justify-content: center;
+        height: 300px; 
+    }
+    .main-content{
+      
+    }
 }
 
 

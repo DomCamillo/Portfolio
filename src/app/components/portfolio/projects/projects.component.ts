@@ -9,7 +9,9 @@ import { Component ,NgModule, Input, Output, } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
- 
+  goToGitHub(){
+    window.open("https://github.com/DomCamillo", "_blank");
+  }
     
 
   constructor(){
