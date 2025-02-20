@@ -9,13 +9,14 @@ import { CommentsComponent } from '../../components/comments/comments.component'
 import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { ImpressumComponent } from '../impressum/impressum.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [HeaderComponent, AboveTheFoldComponent, AboutMeComponent, 
     SkillsComponent, PortfolioComponent, ProjectsComponent, 
-    CommentsComponent, ContactFormComponent, FooterComponent,ImpressumComponent
+    CommentsComponent, ContactFormComponent, FooterComponent,ImpressumComponent,RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

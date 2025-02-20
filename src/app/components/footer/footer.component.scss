@@ -1,6 +1,7 @@
 footer{
     margin: 0;
-    height: 20vh;
+    min-height: 15vh;
+    max-height: 20vh;
     width: 100%;
     background-color: rgb(20, 29, 47);
     display: flex;
@@ -11,10 +12,19 @@ footer{
     display: flex;
     gap: 40px;
     padding: 20px;
+ 
 }
 .cursor{
     cursor: pointer;
 }
+svg{
+    transition : all 200ms ease-in-out ;
+}
+
+.icons svg:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
 
 .footer-line{
    
@@ -30,5 +40,11 @@ footer{
     footer{
         flex-direction: column;
         justify-content: center;
+    }
+    .icons{
+       display: none;
+    }
+    h1{
+        font-size: 20px;
     }
 }

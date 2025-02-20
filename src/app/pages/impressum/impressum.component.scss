@@ -2,24 +2,26 @@ section{
     max-width: 1920px; // oder 80%, je nach Design-Vorstellung
     margin: 0 auto; // zentriert den Container
     padding: 0 20px; // sorgt für etwas Abstand an den Rände
-  
-    overflow-y: hidden;
+   overflow-Y: scroll;
+    height: 85vh;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-  
+    padding: 10px;
+    
 }
 
-@media only screen and (max-width: 430px){
-    section{
-        height: 90vh;
+@media only screen and (max-width: 1024px){
+    .h2{
+        font-size: 25px;
+      }
+      section{
+        height: 75vh;
     }
 }
-footer{
-    height: 10vh;
-}
+
 
 @media only screen and (max-width: 600px){
     .h3{
@@ -28,4 +30,36 @@ footer{
     .content{
         text-align: center;
     }
+    section{
+        height: 120vh;
+      }
+      .h2{
+        font-size: 20px;
+      }
+    
+}
+
+@media only screen and (max-width: 430px){
+    section{
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    section{
+        height: 160vh;
+    }
+}
+@media only screen and (max-width: 390px){
+    section{
+        height: 120vh;
+      }
+    
+}
+
+@media only screen and (max-width: 375px){
+    section{
+        height: 160vh;
+      }
+    
 }

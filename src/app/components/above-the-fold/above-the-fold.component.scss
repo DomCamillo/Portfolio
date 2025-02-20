@@ -88,6 +88,9 @@
 .icons svg {
   padding: 20px;
 }
+svg{
+  transition : all 200ms ease-in-out ;
+}
 
 .icons svg:hover {
   cursor: pointer;

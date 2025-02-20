@@ -2,13 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
-import { provideRouter, Router } from '@angular/router';
+import { provideRouter, Router, RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, PrivacyPolicyComponent ],
+  imports: [FormsModule, PrivacyPolicyComponent , RouterLink],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
