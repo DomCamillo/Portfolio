@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './above-the-fold.component.scss'
 })
 export class AboveTheFoldComponent {
+
+
+  openGit(){
+    window.open( "https://github.com/DomCamillo", "_blank");
+  }
+
   scrollToContact(){
     
     const contactSection = document.getElementById('contact');

@@ -120,6 +120,7 @@
 .text-link{
     text-decoration: none;
     color:rgb(151, 71, 255);
+    cursor: pointer;
 }
 
 .message-fail-text{
@@ -127,6 +128,12 @@
 }
 .message-success-text{
     color: rgb(64, 255, 47);
+}
+
+.message-container{
+ margin: 0;
+ padding: 0;
+  
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 2560px){

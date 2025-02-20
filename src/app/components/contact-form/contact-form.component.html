@@ -49,10 +49,20 @@
                       
 
                     <div class="checkbox-div" > <input required  [(ngModel)]="contactData.agreesToPrivacyPolicy"   name="checkbox" class="checkbox"  type="checkbox" >
-                        <span class="text">I've read the <a class="text-link" href="">privacy policy</a> and agree to the processing of my data as outlined.</span> </div> 
+                        <span class="text">I've read the <a class="text-link" routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span> </div> 
+
+                        @if(!privacyPolicy && formSubmitted ){
+                            <span  class="message-fail-text"> Please accept the Privacy Policy ! </span>
+                           }
       
-                   <div class="button-div"><button [disabled]="!contactForm.form.valid" type="submit" class="button-transparent">Send message</button></div>
-                 
+                   <div class="button-div"><button  type="submit" class="button-transparent">Send Message</button></div>
+
+                <div class="message-container">       
+                    @if(formSubmitted ){
+                        <span  class="message-success-text"> Your message was succesfully send ! </span>
+                       }
+                </div>  
+                        
                     </form>
 
 

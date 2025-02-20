@@ -10,6 +10,10 @@ import { ProjectsComponent } from './projects/projects.component';
 })
 export class PortfolioComponent {
 
+  gitElPolloLoco:string = "https://github.com/DomCamillo/El-Pollo-Loco"
+  gitJoin:string = "https://github.com/DomCamillo/Join"
+  gitPokedex:string = "https://github.com/DomCamillo/Pokedex"
+
 
 
   projects:any[] = [
@@ -17,19 +21,22 @@ export class PortfolioComponent {
       ProjectName: "El Pollo Loco",
       ProjectImg: "assets/images/laptop-el-pollo-loco.png" ,
       ProjectTech: "JavaScript | HTML | CSS",
-      ProjectDescription: "A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss"
+      ProjectDescription: "A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss",
+      gitLink: "https://github.com/DomCamillo/El-Pollo-Loco"
     },
     {
       ProjectName: "Join",
       ProjectImg: "assets/images/laptop-join-2.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Firebase",
-      ProjectDescription: "A Kanban Board Managin Tool "
+      ProjectDescription: "A Kanban Board Managin Tool ",
+       gitLink: "https://github.com/DomCamillo/Join"
     },
     {
       ProjectName: "Pokedex",
       ProjectImg: "assets/images/laptop-pokedex.png" ,
       ProjectTech: "JavaScript | HTML | CSS",
-      ProjectDescription: "A Pokedex where you can search for pokemons "
+      ProjectDescription: "A Pokedex where you can search for pokemons ",
+       gitLink: "https://github.com/DomCamillo/Pokedex"
     },
     
 

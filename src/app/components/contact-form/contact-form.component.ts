@@ -1,16 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
+import { provideRouter, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, PrivacyPolicyComponent ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
 
+  
   http = inject(HttpClient)
 
   contactData = {
@@ -20,6 +24,8 @@ export class ContactFormComponent {
     agreesToPrivacyPolicy: false
   };
 
+  privacyPolicy = false;
+  formSubmitted = false;
 
   mailTest = false;
 
@@ -34,32 +40,19 @@ export class ContactFormComponent {
     },
   };
 
-  /* onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            console.log('Email sent successfully:', response);
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error('Error sending email:', error);
-          },
-          complete: () => console.info('Email send process complete'),
-        });
-    } else if (ngForm.valid && this.mailTest) {
-      console.log('Test mode: Email not actually sent.');
-      ngForm.resetForm();
-    }
-  } */
-
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.contactData.agreesToPrivacyPolicy) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.formSubmitted = true;
+            this.privacyPolicy = true;
             ngForm.resetForm();
+            setTimeout(() => {
+              this.formSubmitted = false;
+              this.privacyPolicy = false;
+            }, 2000);
+            
           },
           error: (error) => {
             console.error(error);
@@ -69,11 +62,12 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
+      this.formSubmitted = false;
     }
   }
 
- /*  onSubmit(ngForm: NgForm) {
-    if(ngForm.valid && ngForm.submitted)
-    console.log('Form submitted', this.contactData);
-  } */
+  navigatePage(){
+ 
+  }
+ 
 }
