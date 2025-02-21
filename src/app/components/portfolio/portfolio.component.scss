@@ -85,6 +85,14 @@
        }
      
 }
+
+@media only screen and (max-width: 480px){
+    .portfolio-section{
+        height: 280vh;
+        gap: 40vh;
+    }
+    
+}
 @media only screen and (max-width: 450px){
     .h2{
         font-size: 60px;
@@ -94,8 +102,25 @@
        }
 
        .portfolio-section{
-        
+        gap: 0;
         height:180vh ;
+     }
+
+
+}
+
+@media only screen and (max-width: 430px){
+    .portfolio-section{
+       
+        height:200vh ;
+      
+     }
+}
+@media only screen and (max-width: 414px){
+    .portfolio-section{
+       
+        height:230vh ;
+      
      }
 }
 
@@ -106,6 +131,7 @@
       
      }
 }
+
 @media only screen and (max-width: 375px){
     .portfolio-section{
        

@@ -20,6 +20,11 @@ section{
     flex-direction: column;
    gap: 15px;
 }
+@media only screen and (max-width: 1920px){
+    .text{
+        font-size: 18px;
+    }
+}
 
 @media only screen and (max-width: 1024px){
     .h2{
@@ -45,9 +50,14 @@ section{
       }
     
 }
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 480px){
     section{
         height: 380vh;
+    }
+}
+@media only screen and (max-width: 430px){
+    section{
+        height: 330vh;
     }
 }
 
@@ -56,9 +66,14 @@ section{
         height: 420vh;
     }
 }
+@media only screen and (max-width: 414px){
+    section{
+        height: 350vh;
+    }
+}
 @media only screen and (max-width: 390px){
     section{
-        height: 470vh;
+        height: 400vh;
     }
 }
 

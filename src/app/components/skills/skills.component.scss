@@ -332,9 +332,10 @@
         font-size: 60px;
     }
 }
-@media only screen and (max-width: 500px){
- 
-    
+@media only screen and (max-width: 480px){
+    .skills-section{
+        height: 200vh;
+    }
 }
 
 
@@ -343,16 +344,32 @@
     .skills-section{
         height: 130vh;
     }
+    .text{
+        font-size: 20px;
+    }
   
 }
 
-@media only screen and (max-width: 400px){
- 
+@media only screen and (max-width: 414px){
+    .skills-section{
+        min-height: 190vh;
+    }
 
+}
+@media only screen and (max-width: 390px){
+    .skills-section{
+        height: 150vh;
+    }
 }
 
 @media only screen and (max-width: 375px){
     .skills-section{
-        height: 200vh;
+        height: 220vh;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .h3{
+        font-size: 30px;
     }
 }

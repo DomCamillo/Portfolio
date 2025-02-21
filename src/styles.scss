@@ -203,6 +203,7 @@ body{
     height: 45px;
    width: 130px;
    font-size: 16px;
+   border: none;
    }
 
   .button-green{
@@ -213,7 +214,7 @@ body{
   }
   }
 
-  @media only screen and (max-width: 400px){
+  @media only screen and (max-width: 375px){
     .text{
       font-size: 16px;
      }

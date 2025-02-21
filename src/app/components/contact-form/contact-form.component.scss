@@ -218,19 +218,31 @@
         font-size: 20px;
     }
 }
+@media only screen and (max-width: 480px){
+    .contact-section{
+        height: 100vh;
+    }
+}
 
 @media only screen and (max-width: 450px){
     .text{
-        font-size: 16px;
+        font-size: 20px;
     }
     .contact-section{
         height: 80vh;
         gap: 30px;
       }
 }
+@media only screen and (max-width: 400px){
+
+}
+
 @media only screen and (max-width: 375px){
     .contact-section{
-        height: 80vh;
+        height: 90vh;
         gap: 20px;
       }
+      .text{
+        font-size: 16px;
+    }
 }

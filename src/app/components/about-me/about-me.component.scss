@@ -76,7 +76,7 @@
 
     .pb-image{
         height: 700px;
-        width: 100%;
+        width: auto;
         margin: 0;
         border-radius: 25%;
         z-index: 999;
@@ -170,7 +170,7 @@
     }
 
      .pb-image{
-        height: 300px;
+        height: 400px;
     }
 
     .background-svg-purpel-right{
@@ -194,6 +194,9 @@
  }
 
  @media only screen and (max-width: 600px){
+    .pb-image{
+       width: auto; 
+    }
 
     .about-me-section{
        height: 120vh;
@@ -217,6 +220,11 @@
 }
 
  }
+ @media only screen and (max-width: 480px){
+    .about-me-section{
+        height: 190vh;
+    }
+}
 
  @media only screen and (max-width: 450px){
     .about-me-section{
@@ -227,14 +235,21 @@
      }
  
  }
+ @media only screen and (max-width: 414px){
+    .about-me-section{
+        height: 190vh;
+       
+      
+     }
+ }
  
  @media only screen and (max-width: 400px){
     .about-me-info{
-        font-size: 16px;
+        font-size: 20px;
      }
     
      .about-me-text{
-        font-size: 16px;
+        font-size: 20px;
      }
      .about-me-text-content{
        width: 100%;
@@ -251,20 +266,33 @@
     }
 
     .about-me-section{
-        height: 130vh;
+        height: 140vh;
      }
  
  }
  @media only screen and (max-width: 390px){
     .about-me-section{
-        height: 160vh;
+        height: 200vh;
+     }
+     .about-me-text{
+        font-size: 20px;
+     }
+     .about-me-info{
+        font-size: 20px;
      }
  
  }
 
  @media only screen and (max-width: 375px){
     .about-me-section{
-        height: 150vh;
+        height: 220vh;
      }
+     .about-me-text{
+        font-size: 16px;
+     }
+     .about-me-info{
+        font-size: 16px;
+     }
+ 
  
  }

@@ -22,21 +22,24 @@ export class PortfolioComponent {
       ProjectImg: "assets/images/laptop-el-pollo-loco.png" ,
       ProjectTech: "JavaScript | HTML | CSS",
       ProjectDescription: "A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss",
-      gitLink: "https://github.com/DomCamillo/El-Pollo-Loco"
+      gitLink: "https://github.com/DomCamillo/El-Pollo-Loco",
+      projectLink: "https://dominic-moerth.com/ElPolloLoco/index.html"
     },
     {
       ProjectName: "Join",
       ProjectImg: "assets/images/laptop-join-2.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Firebase",
       ProjectDescription: "A Kanban Board Managin Tool ",
-       gitLink: "https://github.com/DomCamillo/Join"
+      gitLink: "https://github.com/DomCamillo/Join",
+      projectLink: "https://dominic-moerth.com/Join/login.html"
     },
     {
       ProjectName: "Pokedex",
       ProjectImg: "assets/images/laptop-pokedex.png" ,
       ProjectTech: "JavaScript | HTML | CSS",
       ProjectDescription: "A Pokedex where you can search for pokemons ",
-       gitLink: "https://github.com/DomCamillo/Pokedex"
+      gitLink: "https://github.com/DomCamillo/Pokedex",
+      projectLink: "https://dominic-moerth.com/Pokedex/index.html"
     },
     
 

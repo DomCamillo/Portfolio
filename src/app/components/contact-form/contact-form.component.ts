@@ -51,7 +51,7 @@ export class ContactFormComponent {
             setTimeout(() => {
               this.formSubmitted = false;
               this.privacyPolicy = false;
-            }, 2000);
+            }, 3000);
             
           },
           error: (error) => {
@@ -66,8 +66,6 @@ export class ContactFormComponent {
     }
   }
 
-  navigatePage(){
- 
-  }
+
  
 }

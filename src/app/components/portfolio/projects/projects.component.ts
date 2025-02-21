@@ -15,6 +15,10 @@ export class ProjectsComponent {
   goToGitHub(link:string){
     window.open(link, "_blank");
   }
+
+  goToProject(projectLink: string){
+    window.open(projectLink, "_blank");
+  }
     
 
   constructor(){

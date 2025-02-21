@@ -42,28 +42,40 @@ section{
       }
     
 }
+@media only screen and (max-width: 480px){
+    section{
+        height: 140vh;
+    }
+}
+
 
 @media only screen and (max-width: 430px){
     section{
-        height: 150vh;
+        height: 130vh;
     }
 }
 
 @media only screen and (max-width: 420px){
     section{
-        height: 160vh;
+        height: 140vh;
     }
 }
+@media only screen and (max-width: 414px){
+    section{
+        height: 150vh;
+    }
+}
+
 @media only screen and (max-width: 390px){
     section{
-        height: 120vh;
+        height: 100vh;
       }
     
 }
 
 @media only screen and (max-width: 375px){
     section{
-        height: 160vh;
+        height: 140vh;
       }
     
 }
