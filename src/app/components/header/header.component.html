@@ -6,11 +6,13 @@
         <div class="links">
 
             <div class="check">
-                <input id="check" type="checkbox">
+                <input id="check" type="checkbox" [checked]="isGerman" (change)="toggleLanguage($event)">
                 <label for="check"></label>
+                <span class="lang en">EN</span>
+                <span class="lang de">DE</span>
               </div>
-              
-            <a class="header-links" (click)="scrollToSection($event, 'aboutMe')" >About me</a>
+
+            <a class="header-links" (click)="scrollToSection($event, 'aboutMe')" >{{headerlink}}</a>
             <a class="header-links" (click)="scrollToSection($event, 'skills')" >Skills</a>
             <a class="header-links" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
         </div>

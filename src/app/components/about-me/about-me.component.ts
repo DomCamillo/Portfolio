@@ -15,9 +15,22 @@ export class AboutMeComponent implements OnInit {
   constructor(private translate: TranslateService) {}
 
 
+  get aboutMeHeadline(): string {
+    return this.translate.instant('aboutMe.headline');
+  }
   get aboutMeText(): string {
     return this.translate.instant('aboutMe.text');
   }
+  get aboutMeLocation(): string {
+    return this.translate.instant('aboutMe.location');
+  }
+  get aboutMeOpenminded(): string {
+    return this.translate.instant('aboutMe.openMinded');
+  }
+  get aboutMeProgramming(): string {
+    return this.translate.instant('aboutMe.programming');
+  }
+  
 
   animateIcons = false;
 

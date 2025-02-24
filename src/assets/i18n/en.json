@@ -1,9 +1,51 @@
 {
-  "aboutMe": {
-    "text": "Hey there! I'm Dominic, a frontend developer from Austria with a passion for creating intuitive and engaging digital experiences. With an eye for detail and a problem-solving mindset, I work on turning concepts into clean and user-friendly designs. <br> <br> Let's connect and create something amazing together."
-  },
 
-  "skills": {
-    "text": "Throughout my journey, I’ve worked on diverse projects, utilizing various frontend technologies and concepts. Additionally, I have gained some experience in backend development, allowing me to understand the bigger picture of web applications. I’m always eager to explore new tools and methodologies to continuously refine my skills and stay ahead in the dynamic world of web development."
-  }
+
+    "header":{
+        "links": "About me"
+    },
+ 
+   "aboutMe": {
+    "headline": "About Me",
+    "text": "Hey there! I'm Dominic, a frontend developer from Austria with a passion for creating intuitive and engaging digital experiences. With an eye for detail and a problem-solving mindset, I work on turning concepts into clean and user-friendly designs. Let's connect and create something amazing together.",
+    "location": "Flexible in terms of working environments, I can work effectively both on-site in Vorarlberg and remotely.",
+    "openMinded": "I am open-minded and always seeking new challenges to continuously expand my knowledge and refine my skills.",
+    "programming": "To me, programming is more than simply coding, it's a creative approach to problem-solving. I enjoy simplifying technical challenges into user-friendly solutions, helping you achieve your goals and bring your visions to life."
+},
+  
+"skills": {
+    "text": "Throughout my journey, I’ve worked on diverse projects, utilizing various frontend technologies and concepts. Additionally, I have gained some experience in backend development, allowing me to understand the bigger picture of web applications. I’m always eager to explore new tools and methodologies to continuously refine my skills and stay ahead in the dynamic world of web development.",
+    "contactMe": "Feel free to reach out. I look forward to expanding my knowledge.",
+    "looking": "Looking for a different skill?",
+    "buttonText": "Let's Chat"
+},
+  
+"portfolio": {
+    "text": "Explore a selection of my work – interact with the projects to see my skills in action."
+},
+  
+"projects": {
+    "ElPolloLoco": {
+        "description": "A simple, yet not-so-simple jump-and-run game based on OOP. Help Pepe find coins and defeat the boss."
+    },
+  
+    "Join": {
+        "description": "Join is a Kanban-based task management tool that helps you organize your workflow efficiently. Easily create, manage, and track your tasks."
+    },
+  
+    "Pokedex": {
+        "description": "The Pokédex app lets you search for Pokémon and explore detailed information about them. Powered by the PokéAPI."
+    }
+},
+  
+"contactFrom": {
+    "headline": "Facing a challenge that needs a solution?",
+    "text": "Feel free to reach out through this form. I’d love to hear your ideas and contribute to your projects with my work.",
+    "text2": "Need a frontend developer?",
+    "contactMe": "Contact Me",
+    "privacyPolicy": "I have read the",
+    "privacyPolicy2": " and agree to the processing of my data as described.",
+    "privacyPolicyPurple": "Privacy Policy"
+}
+      
 }

@@ -1,8 +1,62 @@
 {
-    "aboutMe": {
-      "text": "Hey there! Ich bin Dominic, ein Frontend-Entwickler aus Österreich mit einer Leidenschaft für die Erstellung intuitiver und ansprechender digitaler Erfahrungen. Mit einem Auge für Details und einer Problemlösungsmentalität arbeite ich daran, Konzepte in sauberem und benutzerfreundlichen Designs umzusetzen. Lass uns verbinden und gemeinsam etwas Großartiges schaffen."
+    "header":{
+        "links": "Über mich"
     },
+
+
+    "aboutMe": {
+      "headline": "Über Mich",
+      "text": "Hey there! Ich bin Dominic, ein Frontend-Entwickler aus Österreich mit einer Leidenschaft für die Erstellung intuitiver und ansprechender digitaler Erfahrungen. Mit einem Auge für Details und einer Problemlösungsmentalität arbeite ich daran, Konzepte in sauberem und benutzerfreundlichen Designs umzusetzen. Lass uns verbinden und gemeinsam etwas Großartiges schaffen.",
+      "location":  "Flexibel in Bezug auf die Arbeitsumgebung kann ich sowohl vor Ort in Vorarlberg als auch remote effektiv arbeiten.",
+      "openMinded" :"Ich bin aufgeschlossen und immer auf der Suche nach neuen Herausforderungen, um mein Wissen kontinuierlich zu erweitern und meine Fähigkeiten zu verfeinern.",
+      "programming": "Für mich ist Programmieren mehr als nur Programmieren, es ist ein kreativer Ansatz zur Problemlösung. Es macht mir Spaß, technische Herausforderungen in benutzerfreundliche Lösungen zu vereinfachen und Ihnen dabei zu helfen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    },
+
     "skills": {
-      "text": "Während meiner Reise habe ich an verschiedenen Projekten gearbeitet und verschiedene Frontend-Technologien und Konzepte genutzt. Darüber hinaus habe ich ein wenig Erfahrungen in der Backend-Entwicklung gesammelt, was mir ermöglicht, das Gesamtbild von Webanwendungen zu verstehen. Ich bin immer bestrebt, neue Tools und Methoden zu erkunden, um meine Fähigkeiten kontinuierlich zu verfeinern und in der dynamischen Welt der Webentwicklung vorne zu bleiben."
+      "text": "Während meiner Reise habe ich an verschiedenen Projekten gearbeitet und verschiedene Frontend-Technologien und Konzepte genutzt. Darüber hinaus habe ich ein wenig Erfahrungen in der Backend-Entwicklung gesammelt, was mir ermöglicht, das Gesamtbild von Webanwendungen zu verstehen. Ich bin immer bestrebt, neue Tools und Methoden zu erkunden, um meine Fähigkeiten kontinuierlich zu verfeinern und in der dynamischen Welt der Webentwicklung vorne zu bleiben.",
+      "contactMe":"Gerne können sie mich Kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
+      "looking": "Suchen Sie nach einer anderen Fähigkeit?",
+      "buttonText": "Let's Chat"
+
+    },
+
+    "portfolio":{
+        "text": "Entdecken Sie eine Auswahl meiner Arbeiten – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+
+    },
+
+    "projects": {
+        "ElPolloLoco":{
+            "description":"Ein einfaches, aber nicht so einfaches Jump-and-Run-Spiel basierend auf OOP. Hilf Pepe, Münzen zu finden und den Boss zu bekämpfen."       
+        }, 
+
+        "Join": {
+            "description": "Join ist ein Kanban-basiertes Task-Management-Tool, das Ihnen hilft, Ihren Workflow effizient zu organisieren. Erstellen, verwalten und verfolgen Sie Ihre Aufgaben einfach."
+        },
+
+        "Pokedex": {
+            "description": "Die Pokédex-App ermöglicht es Ihnen, nach Pokémon zu suchen und detaillierte Informationen über sie zu erkunden. Angetrieben von der PokéAPI."
+        }
+
+    },
+
+    "contactFrom":{
+        "headline": "Stehen Sie vor einer Herausforderung, die einer Lösung bedarf?",
+        "text": "Kontaktieren Sie uns gerne über dieses Formular. Ich würde gerne Ihre Ideen hören und mit meiner Arbeit zu Ihren Projekten beitragen.",
+        "text2": "Brauchen Sie einen Frontend-Entwickler? ",
+        "contactMe": "Kontaktieren Sie mich",
+        "privacyPolicy": "Ich habe die ",
+        "privacyPolicy2": " gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
+        "privacyPolicyPurpel": "Datenschutzerklärung "
     }
+    
+
+
+
+
+
+
+
+
+
   }

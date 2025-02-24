@@ -5,10 +5,10 @@
     <div class="main-content">
 
         <div class="text-content">
-            <div class="sub-headline-div">    <div class="light-blue-line">  </div> <h3 class="sub-headline">Facing a challenge that needs a solution?</h3>   </div>
+            <div class="sub-headline-div">    <div class="light-blue-line">  </div> <h3 class="sub-headline">{{contactHeadline}}</h3>   </div>
             <div class="text-padding">
-                <div><span class="text" >Feel free to reach out through this form. I’d love to hear your ideas and contribute to your projects with my work.</span></div> <br>
-                <div><span class="text" >Need a Frontend developer? <b> Contact me! </b> </span></div>
+                <div><span class="text" >{{contactText}}</span></div> <br>
+                <div><span class="text" >{{contactText2}}<b>{{contactMe}} </b> </span></div>
     
             </div>
            
@@ -49,7 +49,7 @@
                       
 
                     <div class="checkbox-div" > <input required  [(ngModel)]="contactData.agreesToPrivacyPolicy"   name="checkbox" class="checkbox"  type="checkbox" >
-                        <span class="text">I've read the <a class="text-link" routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.</span> </div> 
+                        <span class="text">{{privacyPolicY}} <a class="text-link" routerLink="/privacy-policy">{{privacyPolicyPurpel}}</a> {{privacyPolicY2}}</span> </div> 
 
                         @if(!privacyPolicy && formSubmitted ){
                             <span  class="message-fail-text"> Please accept the Privacy Policy ! </span>

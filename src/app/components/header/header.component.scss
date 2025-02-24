@@ -123,7 +123,7 @@
 // button 
 .check {
     position: relative;
-    background: linear-gradient(90deg, rgb(20, 29, 47), rgb(111, 227, 29));
+    background: linear-gradient(90deg, rgb(15, 146, 37), rgb(111, 227, 29));
     line-height: 0;
     font-size: 25px;
    }
@@ -155,7 +155,7 @@
    .check label {
     width: 2.2em;
     height: 1em;
-    background: linear-gradient(45deg,  rgb(20, 29, 47), rgb(151, 71, 255));
+    background: linear-gradient(45deg,  rgb(98, 24, 133), rgb(151, 71, 255));
     overflow: hidden;
    }
    
@@ -166,7 +166,7 @@
     height: .8em;
     bottom: 0em;
     left: .0em;
-    background: linear-gradient(45deg,  rgb(20, 29, 47), rgb(226, 225, 228));
+    background: linear-gradient(45deg,  rgb(20, 29, 47), rgb(20, 29, 47));
     box-shadow: 0 6px 7px rgba(0,0,0,0.3);
     outline: none;
    }
@@ -181,7 +181,7 @@
    
    .check label::before,
    .check label::after {
-    content: "· ·";
+    content: "  ";
     position: absolute;
     overflow: hidden;
     left: .50em;
@@ -198,7 +198,7 @@
    }
    
    .check label::after {
-    content: "?";
+    content: " ";
     top: .65em;
     left: .6em;
     height: .1em;
@@ -224,7 +224,33 @@
    }
 
 
+   .lang {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
 
+.lang.en {
+    top: 11px;
+    right: 0.4em;
+    opacity: 1;
+}
+
+.lang.de {
+    top: 11px;
+    left: 0.4em;
+    opacity: 0;
+}
+
+.check input[type="checkbox"]:checked ~ .lang.en {
+    opacity: 0;
+}
+
+.check input[type="checkbox"]:checked ~ .lang.de {
+    opacity: 1;
+}
 
 
 

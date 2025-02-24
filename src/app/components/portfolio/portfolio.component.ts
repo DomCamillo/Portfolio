@@ -1,5 +1,6 @@
 import { Component,Input, Output, NgModule } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,6 +10,11 @@ import { ProjectsComponent } from './projects/projects.component';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+  
+
+
+
+
 
   gitElPolloLoco:string = "https://github.com/DomCamillo/El-Pollo-Loco"
   gitJoin:string = "https://github.com/DomCamillo/Join"
@@ -21,7 +27,7 @@ export class PortfolioComponent {
       ProjectName: "El Pollo Loco",
       ProjectImg: "assets/images/laptop-el-pollo-loco.png" ,
       ProjectTech: "JavaScript | HTML | CSS",
-      ProjectDescription: "A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss",
+      projectKey: "ElPolloLoco", 
       gitLink: "https://github.com/DomCamillo/El-Pollo-Loco",
       projectLink: "https://dominic-moerth.com/ElPolloLoco/index.html"
     },
@@ -29,7 +35,8 @@ export class PortfolioComponent {
       ProjectName: "Join",
       ProjectImg: "assets/images/laptop-join-2.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Firebase",
-      ProjectDescription: "Join is a Kanban-based task management tool that helps you organize your workflow efficiently easily create, manage, and track your tasks .",
+      projectKey: "Join", // Schlüssel für die Übersetzung der Beschreibung
+   
       gitLink: "https://github.com/DomCamillo/Join",
       projectLink: "https://dominic-moerth.com/Join/login.html"
     },
@@ -37,13 +44,24 @@ export class PortfolioComponent {
       ProjectName: "Pokedex",
       ProjectImg: "assets/images/laptop-pokedex.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Rest API",
-      ProjectDescription: "The Pokédex App lets you search for Pokémon and explore detailed information about them Powered by the PokéAPI.",
+      projectKey: "Pokedex", // Schlüssel für die Übersetzung der Beschreibung
+    
       gitLink: "https://github.com/DomCamillo/Pokedex",
       projectLink: "https://dominic-moerth.com/Pokedex/index.html"
     },
     
 
   ]
+  constructor(private translate: TranslateService) {}
+
+
+  getTranslatedDescription(key: string): string {
+   return this.translate.instant(`projects.${key}.description`);
+ }
+   
+ get portfolioText(): string {
+   return this.translate.instant('portfolio.text');
+ }
 
 }
 

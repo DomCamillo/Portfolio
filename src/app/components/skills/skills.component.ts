@@ -12,8 +12,17 @@ export class SkillsComponent implements AfterViewInit {
   constructor(private el: ElementRef, private translate: TranslateService) { }
 
 
+  get skillslooking(): string {
+    return this.translate.instant('skills.looking');
+  }
+  get skillsContactMe(): string {
+    return this.translate.instant('skills.contactMe');
+  }
   get skillsText(): string {
     return this.translate.instant('skills.text');
+  }
+  get skillsButton(): string {
+    return this.translate.instant('skills.buttonText');
   }
 
 

@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
 import { provideRouter, Router, RouterLink } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -14,6 +15,32 @@ import { provideRouter, Router, RouterLink } from '@angular/router';
 })
 export class ContactFormComponent {
 
+  constructor(private translate: TranslateService) {}
+
+  get contactHeadline(): string {
+    return this.translate.instant('contactFrom.headline');
+  }
+  
+  get contactText(): string {
+    return this.translate.instant('contactFrom.text');
+  }
+  
+  get contactText2(): string {
+    return this.translate.instant('contactFrom.text2');
+  }
+  get contactMe(): string {
+    return this.translate.instant('contactFrom.contactMe');
+  }
+  get privacyPolicY(): string {
+    return this.translate.instant('contactFrom.privacyPolicy');
+  }
+  get privacyPolicY2(): string {
+    return this.translate.instant('contactFrom.privacyPolicy2');
+  }
+  get privacyPolicyPurpel(): string {
+    return this.translate.instant('contactFrom.privacyPolicyPurpel');
+  }
+  
   
   http = inject(HttpClient)
 
