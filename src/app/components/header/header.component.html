@@ -4,6 +4,12 @@
         <h1 class="h1"> <span class="purpel">D</span>omin<span class="green">i</span>c</h1>
         </div>
         <div class="links">
+
+            <div class="check">
+                <input id="check" type="checkbox">
+                <label for="check"></label>
+              </div>
+              
             <a class="header-links" (click)="scrollToSection($event, 'aboutMe')" >About me</a>
             <a class="header-links" (click)="scrollToSection($event, 'skills')" >Skills</a>
             <a class="header-links" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
@@ -13,8 +19,11 @@
             <div class="mobile-menu-line" ></div>
             <div class="mobile-menu-line" ></div>
         </div>
+
+        <!-- mobile menue-->
         <div class="drowp-down-menue  " id="mobile-menu">
             <div class="mobile-links-container">
+                
                 <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'aboutMe')">About me</a>
                 <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'skills')">Skills</a>
                 <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>

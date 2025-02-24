@@ -29,15 +29,15 @@ export class PortfolioComponent {
       ProjectName: "Join",
       ProjectImg: "assets/images/laptop-join-2.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Firebase",
-      ProjectDescription: "A Kanban Board Managin Tool ",
+      ProjectDescription: "Join is a Kanban-based task management tool that helps you organize your workflow efficiently easily create, manage, and track your tasks .",
       gitLink: "https://github.com/DomCamillo/Join",
       projectLink: "https://dominic-moerth.com/Join/login.html"
     },
     {
       ProjectName: "Pokedex",
       ProjectImg: "assets/images/laptop-pokedex.png" ,
-      ProjectTech: "JavaScript | HTML | CSS",
-      ProjectDescription: "A Pokedex where you can search for pokemons ",
+      ProjectTech: "JavaScript | HTML | CSS | Rest API",
+      ProjectDescription: "The Pokédex App lets you search for Pokémon and explore detailed information about them Powered by the PokéAPI.",
       gitLink: "https://github.com/DomCamillo/Pokedex",
       projectLink: "https://dominic-moerth.com/Pokedex/index.html"
     },
