@@ -1,4 +1,5 @@
-<section id="impressum">
+<section  id="impressum">
+  <app-header></app-header>
   <div class="content">
     <div>
       <h2 class="h2">Impressum</h2>
@@ -13,32 +14,23 @@
       </p>
 
       <p class="text">
-        <strong>Verantwortlich für den Inhalt nach § 25 Abs. 5 MedienG:</strong>
+        <strong>{{verantwortlich}}</strong>
         Dominic Mörth<br />
       </p>
       <p class="text">
-        <strong>Haftungsausschluss:</strong><br />
-        Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die
-        Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch
-        keine Gewähr übernommen werden. Ich übernehme jedoch keine Haftung für
-        die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind
-        ausschließlich deren Betreiber verantwortlich.
+        <strong>{{haftungsausschlussH1}}</strong><br />
+      {{haftungsausschlussText}}
       </p>
       <p class="text">
-        <strong>Urheberrecht:</strong><br />
-        Die durch mich erstellten Inhalte und Werke auf dieser Website
-        unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung,
-        Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
-        Grenzen des Urheberrechts bedürfen meiner schriftlichen Zustimmung.
-        Downloads und Kopien dieser Seite sind nur für den privaten, nicht
-        kommerziellen Gebrauch gestattet.
+        <strong>{{urheberrechtH1}}</strong><br />
+       {{urheberrechtText}}
       </p>
       <p class="text">
-        <strong>Datenschutz:</strong><br />
-        Informationen zum Datenschutz finden Sie in der
-        <a routerLink="/privacy-policy">Datenschutzerklärung</a>.
+        <strong>{{datenschutzH1}}</strong><br />
+       {{datenschutz}}
+        <a routerLink="/privacy-policy">{{datenschutzLink}}</a>.
       </p>
-      <a class="home-Link purpel" routerLink="/"> < Go Back</a>
+      <a class="home-Link purpel" routerLink="/"> < {{goBack}}</a>
     </div>
   </div>
 </section>

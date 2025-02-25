@@ -3,7 +3,7 @@
         "links": "Über mich"
     },
 
-    
+
     "aboveTheFold":{
         "iam": "ich bin"
     },
@@ -53,12 +53,22 @@
         "privacyPolicy": "Ich habe die ",
         "privacyPolicy2": " gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
         "privacyPolicyPurpel": "Datenschutzerklärung "
-    }
+    },
     
 
 
 
-
+    "impressum":{
+     "verantwortlich": "Verantwortlich für den Inhalt nach § 25 Abs. 5 MedienG:",
+     "haftungsausschlussH1": "Haftungsausschluss:"   ,
+     "haftungsausschlussText": " Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Ich übernehme jedoch keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."  , 
+     "urheberrechtH1": "Urheberrecht",
+     "urheberrechtText": "Die durch mich erstellten Inhalte und Werke auf dieser Websiteunterliegen dem österreichischen Urheberrecht. Die Vervielfältigung,Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb derGrenzen des Urheberrechts bedürfen meiner schriftlichen Zustimmung.Downloads und Kopien dieser Seite sind nur für den privaten, nichtkommerziellen Gebrauch gestattet.",
+     "datenschutzH1": "Datenschutz",
+     "datenschutz": "Informationen zum Datenschutz finden Sie in der",
+     "datenschutzLink": "Datenschutzerklärung",
+     "goBack": "Zurück"
+        }
 
 
 

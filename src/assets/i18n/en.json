@@ -51,6 +51,28 @@
     "privacyPolicy": "I have read the",
     "privacyPolicy2": " and agree to the processing of my data as described.",
     "privacyPolicyPurple": "Privacy Policy"
-}
+},
+
+
+
+
+
+
+  "impressum":{
+    "verantwortlich": "Responsible for the content according to Section 25 Paragraph 5 Media Act:",
+    "haftungsausschlussH1": "Disclaimer:"   ,
+    "haftungsausschlussText": " The contents of this website were created with the greatest care. However, no guarantee can be given that the content is correct, complete or up-to-date. However, I assume no liability for the content of external links. The operators are solely responsible for the content of the linked pages."  , 
+    "urheberrechtH1": "copyright",
+    "urheberrechtText": "The content and works created by me on this website are subject to Austrian copyright law. Reproduction, editing, distribution and any kind of use outside the limits of copyright require my written consent. Downloads and copies of this page are only permitted for private, non-commercial use.",
+    "datenschutzH1": "Data protection",
+    "datenschutz": "Information on data protection can be found in the",
+    "datenschutzLink": "Privacy Policy",
+     "goBack": "Go Back"
+   }
+
+
+
+
+
       
 }

@@ -2,19 +2,28 @@ section{
     max-width: 1920px; // oder 80%, je nach Design-Vorstellung
     margin: 0 auto; // zentriert den Container
     padding: 0 20px; // sorgt für etwas Abstand an den Rände
-   overflow-Y: scroll;
-    height: 85vh;
+    overflow-Y: scroll;
+    height: 80vh;
 }
 
 .content{
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    
+   
+   
 }
 .home-Link{
     text-decoration: none;
-    font-size: 26px;
+    font-size: 24px;
+}
+
+.h2{
+    font-size: 46px;
+}
+
+.text{
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -23,6 +32,9 @@ section{
       }
       section{
         height: 75vh;
+    }
+    .content{
+        padding-top: 100px;
     }
 }
 
