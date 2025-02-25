@@ -4,6 +4,11 @@
     "header":{
         "links": "About me"
     },
+
+    "aboveTheFold":{
+        "iam": "i am"
+    },
+
  
    "aboutMe": {
     "headline": "About Me",

@@ -1,7 +1,7 @@
 .above-the-fold-section {
   position: relative;
-  max-height: 90vh;
-  height: 90vh;
+  max-height: 100vh;
+  height: 100vh;
   max-width: 100%;
   background-color: rgba(136, 69, 69, 0);
   display: flex;
@@ -19,15 +19,16 @@
 .first-box {
   display: flex;
   justify-self: flex-end;
-  padding-top: 33px;
+  padding-top: 30px;
   font-weight: 100;
-  font-size: 95px;
+  font-size: 80px;
   margin: 0;
 }
 
 .rotate {
   transform: rotate(270deg);
   margin: 0px;
+ 
 }
 
 .second-box {
@@ -36,10 +37,12 @@
 
 .name-title {
   font-size: 75px;
+ 
 }
 
 .h1-above {
   margin: 0px;
+
 }
 
 .job {
@@ -64,7 +67,32 @@
   transform: rotate(90deg);
   margin: 0px;
   height: 100px;
+ 
+  animation: bounce infinite forwards 3s ;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px) rotate(90deg); /* Startposition */
+  }
+  25% {
+    transform: translateY(-50px) rotate(90deg); /* Nach oben springen */
+  }
+  50% {
+ 
+  }
+  75% {
+  
+  }
+  100% {
+    transform: translateY(-10px) rotate(90deg); /* Zurück zur Startposition */
+  }
+}
+
+
+
+
+
 
 .flex {
   display: flex;
