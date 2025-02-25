@@ -11,7 +11,9 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   isGerman?: boolean;
+
   @Output() scrollTo = new EventEmitter<string>();
+
   constructor(private translate: TranslateService) {}
 
   get headerlink(): string {
@@ -23,13 +25,13 @@ export class HeaderComponent {
     const isChecked = (event.target as HTMLInputElement).checked;
     const language = isChecked ? 'de' : 'en'; // Wechsel zwischen Deutsch und Englisch
     this.translate.use(language)
-    this.isGerman = isChecked; // Sprache ändern
+    this.isGerman = isChecked; 
   }
 
   scrollToSection(event: Event, section: string) {
     event.preventDefault(); // Verhindert das Standardverhalten des Links
     this.scrollTo.emit(section);
-    console.log('scroll to ', section);
+    
   }
 
   openDropDownMenu(){

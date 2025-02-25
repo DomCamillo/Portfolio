@@ -42,7 +42,7 @@ export class PortfolioComponent {
     },
     {
       ProjectName: "Pokedex",
-      ProjectImg: "assets/images/laptop-pokedex.png" ,
+      ProjectImg: "assets/images/laptop-pokedex1.png" ,
       ProjectTech: "JavaScript | HTML | CSS | Rest API",
       projectKey: "Pokedex", // Schlüssel für die Übersetzung der Beschreibung
     

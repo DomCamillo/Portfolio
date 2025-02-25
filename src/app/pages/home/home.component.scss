@@ -1,7 +1,3 @@
-.header{
-    height: 110px;
-   
-}
 
 
 .content{
@@ -11,11 +7,10 @@
     display: flex;
     flex-direction: column;
     gap: 250px;
-    overflow-y: hidden;
+   /*  overflow-y: hidden; */
     
    
 }
-
 
 
 
@@ -116,7 +111,7 @@ clip-path: inset(0px);
 
 .svg-lightblue-left{
     position: absolute;
-    bottom: 3200px;
+    bottom: 2900px;
    left: 0px;
    transform: scale(-1, 1);
    z-index: -90;

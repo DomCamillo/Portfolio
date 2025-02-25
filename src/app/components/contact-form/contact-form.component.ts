@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, Output, EventEmitter } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
 import { provideRouter, Router, RouterLink } from '@angular/router';
@@ -14,6 +14,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+
+    @Output() scrollTo = new EventEmitter<string>();
 
   constructor(private translate: TranslateService) {}
 
@@ -39,6 +41,12 @@ export class ContactFormComponent {
   }
   get privacyPolicyPurpel(): string {
     return this.translate.instant('contactFrom.privacyPolicyPurpel');
+  }
+
+  scrollToSection(event: Event, section: string) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    this.scrollTo.emit(section);
+    console.log('scroll to ', section);
   }
   
   

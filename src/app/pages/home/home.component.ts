@@ -26,16 +26,10 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('skills') skillsSection!: ElementRef;
   @ViewChild('portfolio') portfolioSection!: ElementRef;
   @ViewChild('contact') contactSection!: ElementRef;
+  @ViewChild('header') headerSection!: ElementRef;
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      console.log('ViewChilds initialized:', {
-        aboutMe: this.aboutMeSection,
-        skills: this.skillsSection,
-        portfolio: this.portfolioSection,
-        contact: this.contactSection
-      });
-    }, 500);
+   
   }
 
 
@@ -57,13 +51,14 @@ export class HomeComponent implements AfterViewInit {
       case 'contact':
         element = this.contactSection?.nativeElement;
         break;
+      case 'header':
+        element = this.headerSection?.nativeElement;
+        break;
     }
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      console.warn('element not found');
-    }
+    } 
   }
 }
 

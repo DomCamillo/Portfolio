@@ -1,7 +1,12 @@
 .header-elmenet{
-    height: 100px;
-    background-color: rgba(207, 201, 201, 0);
-    filter: blur(1);
+  
+    background-color: rgba(20, 29, 47, 0.623);
+    position: fixed;
+    left: 0;
+    top: 0px;
+    z-index: 10000;
+    width: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .header{

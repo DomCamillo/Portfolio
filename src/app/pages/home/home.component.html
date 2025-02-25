@@ -119,14 +119,14 @@
     <div class="content">
             
             <div class="no-gap">
-             <app-header (scrollTo)="scrollToSection($event)"></app-header> 
-             <app-above-the-fold >   </app-above-the-fold> 
+            <section #header> <app-header   (scrollTo)="scrollToSection($event)"></app-header> </section> 
+            <section #abovTheFold><app-above-the-fold >   </app-above-the-fold> </section> 
             </div>
 
             <section #aboutMe><app-about-me></app-about-me></section>
             <section #skills><app-skills></app-skills></section>
             <section #portfolio><app-portfolio></app-portfolio></section>
-            <section #contact><app-contact-form></app-contact-form></section>
+            <section #contact><app-contact-form (scrollTo)="scrollToSection($event)"></app-contact-form></section>
 
 
             <!-- <app-footer ></app-footer> -->

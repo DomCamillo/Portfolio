@@ -6,7 +6,7 @@
 
     "aboutMe": {
       "headline": "Über Mich",
-      "text": "Hey there! Ich bin Dominic, ein Frontend-Entwickler aus Österreich mit einer Leidenschaft für die Erstellung intuitiver und ansprechender digitaler Erfahrungen. Mit einem Auge für Details und einer Problemlösungsmentalität arbeite ich daran, Konzepte in sauberem und benutzerfreundlichen Designs umzusetzen. Lass uns verbinden und gemeinsam etwas Großartiges schaffen.",
+      "text": "Hallo! Ich bin Dominic, ein Frontend-Entwickler aus Österreich mit einer Leidenschaft für die Erstellung intuitiver und ansprechender digitaler Erfahrungen. Mit einem Auge für Details und einer Problemlösungsmentalität arbeite ich daran, Konzepte in sauberem und benutzerfreundlichen Designs umzusetzen. Lass uns gemeinsam etwas Großartiges schaffen.",
       "location":  "Flexibel in Bezug auf die Arbeitsumgebung kann ich sowohl vor Ort in Vorarlberg als auch remote effektiv arbeiten.",
       "openMinded" :"Ich bin aufgeschlossen und immer auf der Suche nach neuen Herausforderungen, um mein Wissen kontinuierlich zu erweitern und meine Fähigkeiten zu verfeinern.",
       "programming": "Für mich ist Programmieren mehr als nur Programmieren, es ist ein kreativer Ansatz zur Problemlösung. Es macht mir Spaß, technische Herausforderungen in benutzerfreundliche Lösungen zu vereinfachen und Ihnen dabei zu helfen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
@@ -42,7 +42,7 @@
 
     "contactFrom":{
         "headline": "Stehen Sie vor einer Herausforderung, die einer Lösung bedarf?",
-        "text": "Kontaktieren Sie uns gerne über dieses Formular. Ich würde gerne Ihre Ideen hören und mit meiner Arbeit zu Ihren Projekten beitragen.",
+        "text": "Kontaktieren Sie mich gerne über dieses Formular. Ich würde gerne Ihre Ideen hören und mit meiner Arbeit zu Ihren Projekten beitragen.",
         "text2": "Brauchen Sie einen Frontend-Entwickler? ",
         "contactMe": "Kontaktieren Sie mich",
         "privacyPolicy": "Ich habe die ",
