@@ -7,7 +7,7 @@ import { HeaderComponent } from '../../components/header/header.component';
 @Component({
   selector: 'app-impressum',
   standalone: true,
-  imports: [FooterComponent,RouterLink, HeaderComponent],
+  imports: [RouterLink, HeaderComponent],
   templateUrl: './impressum.component.html',
   styleUrl: './impressum.component.scss'
 })

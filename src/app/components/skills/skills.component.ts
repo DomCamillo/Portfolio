@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslateModule,RouterLink],
+  imports: [TranslateModule,],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
