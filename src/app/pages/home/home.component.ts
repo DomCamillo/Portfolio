@@ -34,9 +34,9 @@ export class HomeComponent implements AfterViewInit {
 
 
     scrollToSection(section: string) {
-      console.log(`Attempting to scroll to section: ${section}`);
+   
     let element: HTMLElement | null = null;
-    console.log("home ts ");
+    
 
     switch (section) {
       case 'aboutMe':

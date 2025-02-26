@@ -5,7 +5,7 @@
     <div class="main-content">
 
         <div class="text-content">
-            <div class="sub-headline-div">    <div class="light-blue-line">  </div> <h3 class="sub-headline">{{contactHeadline}}</h3>   </div>
+            <div class="sub-headline-div">  <div class="light-blue-line"></div>  <h3 class="sub-headline">{{contactHeadline}}</h3>   </div>
             <div class="text-padding">
                 <div><span class="text" >{{contactText}}</span></div> <br>
                 <div><span class="text" >{{contactText2}}<b>{{contactMe}} </b> </span></div>
@@ -32,11 +32,16 @@
                         }
                     </div>
                    
-                    <div class="input-div" ><input #email="ngModel" required="@" [(ngModel)]="contactData.email" name="email" placeholder="Your Email"  class="input" type="email">
+                    <div class="input-div" ><input #email="ngModel" required email [(ngModel)]="contactData.email" name="email" placeholder="Your Email"  class="input" type="email">
                         <br>
-                        @if (!email.valid && email.touched ){
-                            <span class="message-fail-text">Please enter a Email</span>
-                        }
+                        @if (email.invalid && email.touched) {
+                            @if (email.errors?.['required']) {
+                              <span class="message-fail-text">Please enter an Email</span>
+                            }
+                            @if (email.errors?.['email']) {
+                              <span class="message-fail-text">Please enter a valid Email</span>
+                            }
+                          }
                     </div>
                    
                     <div class="input-div" ><textarea minlength="10" #message="ngModel" required [(ngModel)]="contactData.message" name="message" placeholder="Your message" class="input input-text" type="message"></textarea> 

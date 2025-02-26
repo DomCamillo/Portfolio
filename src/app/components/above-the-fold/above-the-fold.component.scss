@@ -100,14 +100,18 @@
 .flex {
   display: flex;
   align-items: center;
+  position: relative;
+  
 }
 .svg{
  box-sizing: content-box;
 }
 
 .green-line {
+  overflow: hidden;
+ 
   height: 3px;
-  width: 100px;
+  width: 80px;
   background-color: greenyellow;
 }
 
@@ -224,7 +228,11 @@ opacity: 0;
   margin: 0;
 }
 
-
+@media only screen and (max-width: 2020px){
+ .flex{
+  padding: 45px;
+ }
+}
 
 @media only screen and (max-width: 1100px){
   .job{
@@ -276,9 +284,7 @@ opacity: 0;
     }
   }
 
-  .green-line{
-    width: 40px;
-  }
+  
   
     .svg{
       height: 25px;
@@ -304,10 +310,23 @@ opacity: 0;
     height: 100vh;
   }
   .font-de, .font-en {
-    font-size: 28px; /* Schriftgröße für noch kleinere Bildschirme */
+    font-size: 28px; 
+  }
+
+  .flex{
+    padding: 0px;
   }
 }
 @media only screen and (max-width: 330px){
+
+.green-line{
+    display: none;
+  }
+
+  .flex{
+    padding: 0px;
+  }
+
 .h1-above {
   font-size: 26px;
 }

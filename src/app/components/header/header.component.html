@@ -1,8 +1,12 @@
 <header class="header-elmenet">
+
+
     <div class="header">
+
         <div class="name">
         <h1 class="h1"  routerLink="/" > <span class="purpel">D</span>omin<span class="green">i</span>c</h1>
         </div>
+        
         <div class="links">
 
             <div class="check">
@@ -26,10 +30,16 @@
         <div class="drowp-down-menue  " id="mobile-menu">
             <div class="mobile-links-container">
                 
-                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'aboutMe')">About me</a>
-                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'skills')">Skills</a>
-                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
-                <a class="links-mobile" href="javascript:void(0);" (click)="scrollToSection($event, 'contact')">Contact</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="closeDropDownMenu()" (click)="scrollToSection($event, 'aboutMe')">About me</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="closeDropDownMenu()"  (click)="scrollToSection($event, 'skills')">Skills</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="closeDropDownMenu()"  (click)="scrollToSection($event, 'portfolio')">Portfolio</a>
+                <a class="links-mobile" href="javascript:void(0);" (click)="closeDropDownMenu()"  (click)="scrollToSection($event, 'contact')">Contact</a>
+                <div class="check">
+                    <input id="check" type="checkbox" [checked]="isGerman" (change)="toggleLanguage($event)">
+                    <label for="check"></label>
+                    <span class="lang en">EN</span>
+                    <span class="lang de">DE</span>
+                  </div>
             </div>
         </div>
     </div>

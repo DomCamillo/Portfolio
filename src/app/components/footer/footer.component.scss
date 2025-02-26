@@ -5,9 +5,19 @@ footer{
     width: 100%;
     background: linear-gradient(to bottom, rgb(22, 33, 53),  rgb(22, 33, 53));
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.footer-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:10px ;
+    padding-right:10px ;
+    width: 100%;
+    max-width: 2560px;
 }
 .icons{
     display: flex;
@@ -47,5 +57,14 @@ svg{
     }
     h1{
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .footer-content{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 14px;
     }
 }

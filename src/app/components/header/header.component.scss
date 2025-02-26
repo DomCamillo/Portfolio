@@ -7,14 +7,20 @@
     z-index: 10000;
     width: 100%;
     backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: center;
+   
 }
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 0px 40px 0px 40px;
     position: relative;
+    width: 100%;
+    max-width: 2560px;
+    
 }
 
 .links{
@@ -55,7 +61,7 @@
     left: 0;
     width: 100%;
     margin-top: 100px;
-    height: 50vh;
+    height: 100vh;
     background-color: rgba(10, 21, 44, 0.767);
     backdrop-filter: blur(10px) !important;
    
@@ -275,7 +281,11 @@
 
 
 
-
+/* @media only screen and (min-width: 1920px){
+.header{
+    max-width: 2560px;
+}
+} */
 
 
 @media only screen and (max-width: 700px){
