@@ -44,6 +44,9 @@
   margin: 0px;
 
 }
+.font-de{
+  font-size: 50px;
+}
 
 .job {
   color: rgb(151, 71, 255);
@@ -280,6 +283,9 @@ opacity: 0;
     .svg{
       height: 25px;
     }
+    .font-de, .font-en {
+      font-size: 35px; /* Schriftgröße für noch kleinere Bildschirme */
+    }
   
 
 } 
@@ -288,11 +294,17 @@ opacity: 0;
     padding-bottom: 50px;
     height: 150px;
   }
+  .font-de, .font-en {
+    font-size: 30px; /* Schriftgröße für noch kleinere Bildschirme */
+  }
 }
 
 @media only screen and (max-width: 375px){
   .above-the-fold-section {
-    height: 90vh;
+    height: 100vh;
+  }
+  .font-de, .font-en {
+    font-size: 28px; /* Schriftgröße für noch kleinere Bildschirme */
   }
 }
 @media only screen and (max-width: 330px){
@@ -303,8 +315,10 @@ opacity: 0;
   font-size: 22px;
 }
 .rotate {
-  font-size: 24px;
+  font-size: 24px !important;
 }
+
+
 
 }
 

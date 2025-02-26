@@ -1,11 +1,12 @@
 import { Component,Input, Output, NgModule } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectsComponent],
+  imports: [ProjectsComponent,RouterLink],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

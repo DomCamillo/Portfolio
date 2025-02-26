@@ -1,6 +1,7 @@
 .skills-section{
+    padding-top: 100px;
     display: flex;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
    
     
@@ -253,6 +254,7 @@
         flex-direction: column-reverse;
         height: 100vh;
         gap: 130px;
+        
     }
 
     .skills-icon-container{
@@ -284,6 +286,7 @@
 @media only screen and (max-width: 700px){
     .skills-section{
         height: 120vh;
+        padding-top: 0px;
     }
     
     .skills-headline-div{

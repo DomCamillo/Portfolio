@@ -1,11 +1,22 @@
+body{
+    background-color: #19263D;   
+}
+
+
 section{
     max-width: 1920px; // oder 80%, je nach Design-Vorstellung
     margin: 0 auto; // zentriert den Container
     padding: 0 20px; // sorgt für etwas Abstand an den Rände
     overflow: scroll;
     height: 120vh;
- 
+   background-color: #141D2F
 }
+
+.h2{
+    font-size: 46px;
+}
+
+
 .text{
     margin: 3px;
     font-size: 20px;
@@ -16,6 +27,7 @@ section{
 }
 
 .content{
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
    gap: 15px;

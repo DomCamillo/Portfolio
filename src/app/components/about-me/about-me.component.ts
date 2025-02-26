@@ -1,11 +1,12 @@
 import { Component,OnInit,NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [CommonModule ,TranslateModule ],
+  imports: [CommonModule ,TranslateModule,RouterLink ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })

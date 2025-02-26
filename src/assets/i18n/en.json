@@ -50,7 +50,7 @@
     "contactMe": "Contact Me",
     "privacyPolicy": "I have read the",
     "privacyPolicy2": " and agree to the processing of my data as described.",
-    "privacyPolicyPurple": "Privacy Policy"
+    "privacyPolicyPurpel": "Privacy Policy"
 },
 
 
@@ -68,9 +68,46 @@
     "datenschutz": "Information on data protection can be found in the",
     "datenschutzLink": "Privacy Policy",
      "goBack": "Go Back"
-   }
+   },
 
 
+
+
+   "privacyPolicy": {
+    "datenschutzh2": "Data Protection",
+    "algemeineHinweise": "General Information",
+    "datenverarbeitungText": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data refers to any data that can be used to personally identify you. Detailed information on data protection can be found in our privacy policy listed below this text.",
+    "datenerfassungH2": "Data Collection on This Website",
+    "verantwortlicheStelle": "Who is responsible for data collection on this website?",
+    "verantwortlicheStelleText": "Data processing on this website is carried out by the website operator. You can find their contact details in the section 'Information on the Responsible Party' in this privacy policy.",
+    "datenerfassungWie": "How do we collect your data?",
+    "datenerfassungWieText1": "Your data is collected in part by you providing it to us. This may include, for example, data that you enter into a contact form.",
+    "datenerfassungWieText2": "Other data is collected automatically or with your consent when you visit the website through our IT systems. This is primarily technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter this website.",
+    "datennutzung": "What do we use your data for?",
+    "datennutzungText": "Some of the data is collected to ensure the proper functioning of the website. Other data may be used to analyze your user behavior.",
+    "datenschutzrechte": "What rights do you have regarding your data?",
+    "datenschutzrechteText": "You have the right to receive information free of charge at any time about the origin, recipient, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. Furthermore, you have the right to request the restriction of the processing of your personal data under certain circumstances. Additionally, you have the right to lodge a complaint with the competent supervisory authority. For any questions regarding data protection, you can contact us at any time.",
+    "hostingH2": "Hosting",
+    "allInkl": "All-inkl",
+    "allInklText1": "The provider is ALL-INKL.COM - Neue Medien Münnich, owned by René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter referred to as All-inkl). For details, please refer to All-inkl's privacy policy:",
+    "allInklText2": "The use of All-inkl is based on Art. 6 (1) (f) GDPR. We have a legitimate interest in ensuring the most reliable presentation of our website. If consent has been requested, processing is carried out exclusively on the basis of Art. 6 (1) (a) GDPR and § 25 (1) TTDSG. Consent can be revoked at any time.",
+    "allgemeineHinweiseH2": "General Information and Mandatory Disclosures",
+    "datenschutzH2": "Data Protection",
+    "datenschutzText": "The operators of this website take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+    "verantwortlicheStelleH2": "Information on the Responsible Party",
+    "verantwortlicheStelleText2": "The responsible party for data processing on this website is: Dominic Mörth, Flurgasse 13, 6800 Feldkirch. Phone: +43 676 5123728,",
+    "speicherdauer": "Storage Period",
+    "speicherdauerText": "Unless a more specific storage period is stated within this privacy policy, your personal data will remain with us until the purpose for processing the data no longer applies. If you assert a legitimate request for deletion or revoke your consent for data processing, your data will be deleted.",
+    "rechtsgrundlagen": "General Information on the Legal Basis for Data Processing",
+    "rechtsgrundlagenText": "Processing is carried out in accordance with Art. 6 GDPR (various legal bases, depending on the case). For further details, please refer to the full privacy policy.",
+    "pluginsToolsH2": "Plugins and Tools",
+    "googleFonts": "Google Fonts (Local Hosting)",
+    "googleFontsText": "This site uses so-called Google Fonts, provided by Google, for the uniform display of fonts. Google Fonts are installed locally. No connection to Google servers is established."
+  }
+
+
+
+   
 
 
 

@@ -56,7 +56,9 @@
     width: 100%;
     margin-top: 100px;
     height: 50vh;
-    background-color: rgb(65, 72, 86);
+    background-color: rgba(10, 21, 44, 0.767);
+    backdrop-filter: blur(10px) !important;
+   
     display: flex;
      justify-content: center;
     align-items: center;

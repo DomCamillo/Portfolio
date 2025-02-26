@@ -1,11 +1,12 @@
 import { Component, Output, EventEmitter, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -1,5 +1,5 @@
 .about-me-section{
-    height: 90vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     
@@ -20,7 +20,7 @@
    bottom: -50px;
    width: 100%;
    height: 100px;
-   background: linear-gradient(to bottom, rgb(22, 33, 53),  rgb(22, 33, 53));
+   background-color: #141D2F;
    filter: blur(10px);
 }
 
@@ -226,9 +226,12 @@
  .about-me-text{
     font-size: 20px;
  }
+
+
  .svg-icon{
     height: 70px;
     width: 55px;
+   
  }
 
  

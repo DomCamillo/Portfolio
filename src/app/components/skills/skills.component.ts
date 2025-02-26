@@ -1,10 +1,11 @@
 import { Component,ElementRef, AfterViewInit  } from '@angular/core';
 import { TranslateService,TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,RouterLink],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
