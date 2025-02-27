@@ -4,16 +4,20 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
 import { provideRouter, Router, RouterLink } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, PrivacyPolicyComponent , RouterLink],
+  imports: [FormsModule, PrivacyPolicyComponent , RouterLink, CommonModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+
+  buttonValid = "rgb(112, 230, 28)"
+  buttonInvalid = "rgb(107, 45, 45)"
 
     @Output() scrollTo = new EventEmitter<string>();
 
@@ -101,6 +105,9 @@ export class ContactFormComponent {
     }
   }
 
-
+  log(){
+    console.log("button works");
+    
+  }
  
 }

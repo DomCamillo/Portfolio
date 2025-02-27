@@ -42,6 +42,6 @@ export class HeaderComponent {
 
   closeDropDownMenu(){
     let container = document.getElementById("mobile-menu");
-    container?.classList.add("display-none")
+    container?.classList.toggle("show")
   }
 }
