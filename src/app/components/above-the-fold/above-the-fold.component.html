@@ -4,7 +4,7 @@
     <div class="name-content">
 
 
-        <div class="first-box">  <p class="rotate animate-iam" [ngClass]="{ 'font-de': getCurrentLanguage() === 'de', 'font-en': getCurrentLanguage() !== 'de' }">{{iamText}}</p></div>
+        <div class="first-box">  <p class="rotate animate-iam" [ngClass]="{ 'font-de': getCurrentLanguage() === 'de', 'font-en': getCurrentLanguage() == 'en' }">{{iamText}}</p></div>
 
         <div class="second-box">
           
@@ -18,7 +18,7 @@
     <div class="bottom-above-the-fold">
         <div class="flex">
 
-            
+            <div class="green-line"></div>
 
             <div class="icons">
                  

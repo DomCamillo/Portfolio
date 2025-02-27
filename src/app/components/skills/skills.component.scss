@@ -32,10 +32,13 @@
 
 
   .blue-line{
+    position: absolute;
+    right: -3900px ;
+    top: 85px;
     height: 2px;
-    width: 200px;
+    width: 4500px;
     background-color: aqua;
-    display: none;
+  
   }
   
 

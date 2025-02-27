@@ -12,6 +12,7 @@
     width: 90%;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
 }
 
 .portfolio-subtext{
@@ -23,8 +24,11 @@
 
 
 .purpel-line-short{
-    height: 2px;
-    width: 100px;
+   
+    position: absolute;
+  left: -2900px;
+  height: 2px;
+  width: 2870px;
     background-color:  rgb(151, 71, 255);
 }
 .purpel-line-long{

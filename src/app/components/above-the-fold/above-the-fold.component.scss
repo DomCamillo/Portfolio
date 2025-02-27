@@ -108,10 +108,10 @@
 }
 
 .green-line {
-  overflow: hidden;
- 
+  position: absolute;
+  right: 200px;
   height: 3px;
-  width: 80px;
+  width: 3980px;
   background-color: greenyellow;
 }
 
