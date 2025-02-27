@@ -1,9 +1,8 @@
 
 
 .content{
-    max-width: 1920px; // oder 80%, je nach Design-Vorstellung
-    margin: 0 auto; // zentriert den Container
-    padding: 0 20px; // sorgt für etwas Abstand an den Rände
+    max-width: 1920px; 
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     gap: 250px;
@@ -159,6 +158,15 @@ clip-path: inset(0px);
     left: 0px;
     z-index: -90;
     }
+
+
+    @media only screen and (min-width: 2561px) {
+      .content{
+        max-width: 2560px;
+        gap: 150px;
+      }
+    }
+
 
     @media only screen and (max-width: 2550px){
       .green-line{

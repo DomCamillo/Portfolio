@@ -227,6 +227,12 @@
     fill: rgb(110, 16, 238); 
 }
 
+@media only screen and (min-width: 2561px){
+    .skills-section{
+        height: 40vh;
+    }
+}
+
 
 
 @media only screen and (max-width: 1210px){
