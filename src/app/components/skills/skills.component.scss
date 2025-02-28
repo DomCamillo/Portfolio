@@ -7,6 +7,8 @@
     
 }
 
+
+
 .skills-icon-container{
     width: 50%;
     display: flex;
@@ -47,7 +49,7 @@
 
 
 .skills-headline-div{
- 
+    width: 100%;
     position: relative;
     display: flex;
    height: 150px;
@@ -236,7 +238,14 @@
     }
 }
 
-
+@media only screen and (max-width: 1920px){
+    .blue-line{
+        position: static;
+        display: flex;
+        width: 80%;
+        right: -40px;
+    }
+}
 
 @media only screen and (max-width: 1210px){
     .text{
@@ -281,8 +290,13 @@
 
     }
     .skills-headline-div{
-       justify-content: flex-start;
-       gap: 20px;
+     gap: 50px;
+     width: 110%;
+    }
+
+    .blue-line{
+    
+        width: 100%;
     }
     
     .skill-icon-text{

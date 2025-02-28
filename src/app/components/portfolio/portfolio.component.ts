@@ -11,10 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent {
-  gitElPolloLoco: string = 'https://github.com/DomCamillo/El-Pollo-Loco';
-  gitJoin: string = 'https://github.com/DomCamillo/Join';
-  gitPokedex: string = 'https://github.com/DomCamillo/Pokedex';
-
+ 
   projects: any[] = [
     {
       ProjectName: 'El Pollo Loco',
@@ -28,8 +25,7 @@ export class PortfolioComponent {
       ProjectName: 'Join',
       ProjectImg: 'assets/images/laptop-join-2.png',
       ProjectTech: 'JavaScript | HTML | CSS | Firebase',
-      projectKey: 'Join', // Schlüssel für die Übersetzung der Beschreibung
-
+      projectKey: 'Join', 
       gitLink: 'https://github.com/DomCamillo/Join',
       projectLink: 'https://dominic-moerth.com/Join/login.html',
     },
@@ -37,9 +33,8 @@ export class PortfolioComponent {
       ProjectName: 'Pokedex',
       ProjectImg: 'assets/images/laptop-pokedex1.png',
       ProjectTech: 'JavaScript | HTML | CSS | Rest API',
-      projectKey: 'Pokedex', // Schlüssel für die Übersetzung der Beschreibung
-
-      gitLink: 'https://github.com/DomCamillo/Pokedex',
+      projectKey: 'Pokedex', 
+       gitLink: 'https://github.com/DomCamillo/Pokedex',
       projectLink: 'https://dominic-moerth.com/Pokedex/index.html',
     },
   ];
@@ -58,5 +53,5 @@ export class PortfolioComponent {
     ProjectName: "Da Bubble",
     ProjectImg: "assets/images/laptop-el-pollo-loco.png" ,
     ProjectTech: "Angular | Typescript | HTML | SCSS | Firebase",
-    ProjectDescription: "A simple but not so simple jump-and-Run game based on OOP. Help Pepe to find coins and fight the boss"
+    ProjectDescription: ""
   }, */

@@ -105,9 +105,5 @@ export class ContactFormComponent {
     }
   }
 
-  log(){
-    console.log("button works");
-    
-  }
  
 }

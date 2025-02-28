@@ -11,6 +11,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ProjectsComponent {
 
+  @Input() projects:any[] = []
+
   constructor(private translate: TranslateService) {}
 
   getTranslatedDescription(key: string): string {
@@ -24,15 +26,6 @@ export class ProjectsComponent {
   goToProject(projectLink: string){
     window.open(projectLink, "_blank");
   }
-    
-
-
-
-  @Input() projects:any[] = []
- 
-
- 
- 
     
   }
 

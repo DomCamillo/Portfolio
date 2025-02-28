@@ -30,7 +30,7 @@ export class HeaderComponent {
   }
 
   scrollToSection(event: Event, section: string) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Links
+    event.preventDefault(); 
     this.scrollTo.emit(section);
     
   }

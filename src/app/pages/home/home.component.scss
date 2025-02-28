@@ -1,5 +1,5 @@
 body{
-  overflow-y: hidden;
+  
 }
 
 .content{
@@ -8,9 +8,15 @@ body{
     display: flex;
     flex-direction: column;
     gap: 250px;
-    
+   
     
    
+}
+
+.over-content{
+  position: relative;
+ 
+ 
 }
 
 section{
@@ -69,11 +75,7 @@ section{
     width: 100%;
 }
 
-.over-content{
-    position: relative;
-   
-   
-}
+
 
 .svg-green{
     animation: pulse 40s infinite alternate ease-in-out;
@@ -272,6 +274,8 @@ clip-path: inset(0px);
      }
     }
     @media only screen and (max-width: 700px){
+     
+
       .long-green-line{
         bottom: 1137px;
         width: 50px;

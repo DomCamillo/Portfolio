@@ -28,10 +28,10 @@ export class PrivacyPolicyComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
         this.loadPrivacyPolicy();
-
         this.langChangeSubscription = this.translate.onLangChange.subscribe(()=>{
           this.loadPrivacyPolicy();
         })
+        window.scrollTo(0,0)
     }
 
     

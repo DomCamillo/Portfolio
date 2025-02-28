@@ -48,8 +48,6 @@
 
  .sub-headline{
     font-size: 30px;
-  
-    
  }
 
 
@@ -59,8 +57,9 @@
     top: 50px;
     height: 2px;
     width: 2870px;
-    background-color: rgb(2, 204, 255) ;
+    background-color: rgb(2, 204, 255);
   }
+
   
   .long-green-line{
     position: absolute;
@@ -70,7 +69,6 @@
     width: 3500px;
     background-color: rgb(112, 230, 28) ;
 }
-
 
 
 
@@ -121,14 +119,25 @@
     
  }
 
-
-
-
+ button:hover:not(:disabled) {
+    background-color: #45a049; /* Dunkleres Grün */
+  }
+  
+ .disabled-button {
+    background-color: #cccccc; /* Grau */
+    cursor: not-allowed;
+  }
+  .disabled-button:hover {
+    background-color: #cccccc; /* Grau bleibt gleich */
+  }
 
 .button-div{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    >.button{
+
+    }
 }
 
 .text-link{
@@ -209,6 +218,24 @@
     }
    
 }
+@media only screen and (max-width: 1920px){
+    .long-green-line{
+        position: static;
+        display: flex;
+        width: 30%;
+    
+    }
+
+    .headline-div{
+        justify-content: flex-end;
+        position: static;
+    }
+
+    .sub-headline-div{
+        position: static;
+        padding-left: 30px;
+    }
+}
 
 
 @media only screen and (max-width: 1200px){
@@ -249,9 +276,22 @@
 
     .form-content{
        width: 90%;
+    } 
+}
+
+@media only screen and (max-width: 800px){
+    .headline-div{
+    padding-left: 0px;
     }
 }
+
+
 @media only screen and (max-width: 600px){
+.headline-div{
+    padding-right: 0px;
+    justify-content: flex-end;
+}
+
   .h2{
     font-size: 60px;
     padding-left: 10px;
@@ -285,6 +325,11 @@
     .form{
         justify-content: center;
         align-items: center;
+    }
+
+    .sub-headline-div{
+        position: static;
+        padding-left: 0px;
     }
 
     

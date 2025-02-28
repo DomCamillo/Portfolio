@@ -44,7 +44,7 @@
                           }
                     </div>
                    
-                    <div class="input-div" ><textarea minlength="10" #message="ngModel" required [(ngModel)]="contactData.message" name="message" placeholder="Your message" class="input input-text" type="message"></textarea> 
+                    <div class="input-div" ><textarea minlength="1" #message="ngModel" required [(ngModel)]="contactData.message" name="message" placeholder="Your message" class="input input-text" type="message"></textarea> 
                         <br> 
                         @if (!message.valid && message.touched ){
                             <span class="message-fail-text">Please enter a Message</span>
@@ -61,8 +61,8 @@
                            }
       
                            <div class="button-div">
-                            <button [disabled]="!contactForm.form.valid || !contactData.agreesToPrivacyPolicy" [ngStyle]="{'border-color': (!contactForm.form.valid || !contactData.agreesToPrivacyPolicy) ? buttonInvalid : buttonValid}"
-                             type="submit" (click)="log()" class="button-transparent">Send Message</button>     
+                            <button   [ngClass]="{'disabled-button': !contactForm.form.valid || !contactData.agreesToPrivacyPolicy}" [disabled]="!contactForm.form.valid || !contactData.agreesToPrivacyPolicy" [ngStyle]="{'border-color': (!contactForm.form.valid || !contactData.agreesToPrivacyPolicy) ? buttonInvalid : buttonValid}"
+                             type="submit"  class="button-transparent">Send Message</button>     
                     
                     <svg (click)="scrollToSection($event, 'header')" class="upsvg-mobile" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="1" y="1" width="37" height="37" rx="18.5" stroke="white" stroke-width="2"/>

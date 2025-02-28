@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    padding-left: 20px;
 }
 
 .portfolio-subtext{
@@ -26,7 +27,7 @@
 .purpel-line-short{
    
     position: absolute;
-  left: -2900px;
+  left: -2850px;
   height: 2px;
   width: 2870px;
     background-color:  rgb(151, 71, 255);
@@ -147,9 +148,15 @@
 
 @media only screen and (max-width: 375px){
     .portfolio-section{
-       
         height:280vh ;
-      
+     }
+
+     .text{
+        font-size: 18px;
+     }
+
+     .portfolio-headline{
+        padding-left: 20px;
      }
 
      .h2{

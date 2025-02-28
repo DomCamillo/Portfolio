@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from "../../components/footer/footer.component";
 import { RouterLink } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -11,8 +11,10 @@ import { HeaderComponent } from '../../components/header/header.component';
   templateUrl: './impressum.component.html',
   styleUrl: './impressum.component.scss'
 })
-export class ImpressumComponent {
-
+export class ImpressumComponent  implements OnInit{
+  ngOnInit(): void {
+    window.scrollTo(0, 0); // Scroll zum Seitenanfang
+  }
   constructor(private translate: TranslateService) {}
 
 
@@ -44,7 +46,7 @@ export class ImpressumComponent {
     return this.translate.instant('impressum.goBack');
   }
  
-
+  
 
  email = 'dominic@moerth.ch'
 }

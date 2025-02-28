@@ -57,9 +57,13 @@ export class HomeComponent implements AfterViewInit {
     }
 
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } 
-  }
+      const offset = 180; // Passe diesen Wert an die Höhe deines Headers an
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
 }
-
+}
 
