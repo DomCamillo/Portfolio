@@ -10,7 +10,9 @@ export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-
+/**
+ * For ngx-translate  
+ */
 
 export const appConfig: ApplicationConfig = {
   providers: [

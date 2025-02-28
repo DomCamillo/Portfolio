@@ -30,14 +30,17 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
    
-  }
+   }
 
 
     scrollToSection(section: string) {
    
     let element: HTMLElement | null = null;
     
-
+/** 
+ * Die Funktion scrollToSection nimmt einen Parameter section entgegen, der angibt, zu welchem Abschnitt gescrollt werden soll.
+ * Ein switch-Statement wird verwendet, um das entsprechende DOM-Element basierend auf dem Wert von section auszuwählen.
+ */
     switch (section) {
       case 'aboutMe':
         element = this.aboutMeSection?.nativeElement;
@@ -56,8 +59,12 @@ export class HomeComponent implements AfterViewInit {
         break;
     }
 
+    /**
+     * offset fuer das scrollen 
+     */
+
     if (element) {
-      const offset = 180; // Passe diesen Wert an die Höhe deines Headers an
+      const offset = 180;
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,
