@@ -46,8 +46,8 @@
 "contactFrom": {
     "headline": "Facing a challenge that needs a solution?",
     "text": "Feel free to reach out through this form. I’d love to hear your ideas and contribute to your projects with my work.",
-    "text2": "Need a frontend developer?",
-    "contactMe": "Contact Me",
+    "text2": "Need a frontend developer? ",
+    "contactMe": " Contact Me",
     "privacyPolicy": "I have read the",
     "privacyPolicy2": " and agree to the processing of my data as described.",
     "privacyPolicyPurpel": "Privacy Policy"

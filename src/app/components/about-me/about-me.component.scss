@@ -121,13 +121,18 @@
 
  @media only screen and (min-width: 2561px) {
    .about-me-section{
-      height: 80vh;
+      height: 70vh;
   }
 
   .about-me-image{
    height: 1000px  
   }
  }
+ @media only screen and (min-width: 3561px) {
+   .about-me-section{
+       height: 40vh;
+   }
+}
 
 
 
