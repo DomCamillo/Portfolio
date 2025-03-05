@@ -64,7 +64,7 @@ export class HomeComponent implements AfterViewInit {
      */
 
     if (element) {
-      const offset = 180;
+      const offset = 120;
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,

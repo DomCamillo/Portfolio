@@ -1,14 +1,16 @@
-import { Component, Input, Output, NgModule } from '@angular/core';
+import { Component,  NgModule , OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 
+
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectsComponent],
+  imports: [ProjectsComponent, ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
+  providers: [], 
 })
 export class PortfolioComponent {
  
@@ -38,7 +40,10 @@ export class PortfolioComponent {
       projectLink: 'https://dominic-moerth.com/Pokedex/index.html',
     },
   ];
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private el: ElementRef) {}
+
+
+
 
   getTranslatedDescription(key: string): string {
     return this.translate.instant(`projects.${key}.description`);

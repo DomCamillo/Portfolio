@@ -42,14 +42,67 @@ flex-direction: column;
     filter: contrast(0.8);
 }
 
+
+
+
+/*   
+.singel-project {
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+  
+  .singel-project.visible {
+    opacity: 1; 
+    transform: translateX(0);
+  }
+ */
+
+
+
 .singel-project{
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
     min-width: 100%;
     height: 500px;
     gap: 150px;
+    opacity: 0;
 }
+.singel-project.visible {
+    animation: fadeInFromRight 2s forwards; 
+  }
+  
+  .singel-project.reverse.visible {
+    animation: fadeInFromLeft 2s forwards; 
+  }
+  
+
+
+@keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(200px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+
+@keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+
+
 
 .reverse {
     flex-direction: row-reverse;

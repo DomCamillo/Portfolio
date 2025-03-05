@@ -2,7 +2,7 @@
 
 @for(item of projects; track item; let i = $index){
 
- <div class="singel-project"   [ngClass]="{ 'reverse': i % 2 !== 0 }" > 
+ <div class="singel-project"   [ngStyle]="{ 'animation-delay': i * 0.3 + 's' }"  [ngClass]="{ 'reverse': i % 2 !== 0 }" > 
 
     <div class="project-image">
         <img class="img" src="{{item.ProjectImg}}" alt="">

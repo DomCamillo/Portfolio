@@ -45,6 +45,8 @@ export class SkillsComponent implements AfterViewInit {
         observer.observe(icon);
     });
 }
+
+
 scrollToContact(){
     
     const contactSection = document.getElementById('contact');
