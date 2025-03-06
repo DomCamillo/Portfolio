@@ -1,5 +1,4 @@
 .header-elmenet{
-  
     background-color: rgba(20, 29, 47, 0.623);
     position: fixed;
     left: 0;
@@ -16,7 +15,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+ /*    padding: 0px 40px 0px 40px; */
     position: relative;
     width: 100%;
     max-width: 1920px;
@@ -64,7 +63,6 @@
     height: 100vh;
     background-color: rgba(10, 21, 44, 0.945);
     backdrop-filter: blur(10px) !important;
-   
     display: flex;
      justify-content: center;
     align-items: center;
@@ -132,17 +130,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-// button 
 .check {
     position: relative;
     background: linear-gradient(90deg, rgb(15, 146, 37), rgb(111, 227, 29));
@@ -282,6 +269,12 @@
     }
 }
 
+@media only screen and (max-width: 1919px){
+    .header{
+            padding: 0px 40px 0px 40px;
+    }
+}
+
 
 
 
@@ -307,6 +300,7 @@
     .drowp-down-menue{
         display: none;
     }
+   
     
 }
 @media only screen and (max-width: 555px){
@@ -314,5 +308,9 @@
     
         display: none;
     }
+
+    .header{
+        padding: 0px 20px 0px 20px;
+}
     
 }
