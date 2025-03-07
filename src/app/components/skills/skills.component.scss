@@ -406,7 +406,7 @@
 
 @media only screen and (max-width: 414px){
     .skills-section{
-        min-height: 190vh;
+       
     }
 
 }
@@ -421,8 +421,11 @@
 
 @media only screen and (max-width: 375px){
     .skills-section{
-        height: 220vh;
-        gap: 10px;
+        height: 230vh;
+        gap: 50px;
+    }
+    .skills-text-container{
+        height: 110vh;
     }
     .text{
         font-size: 16px;
