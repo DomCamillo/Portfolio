@@ -1,7 +1,7 @@
 .skills-section{
     padding-top: 100px;
     display: flex;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
    
     
@@ -232,9 +232,26 @@
     fill: rgb(110, 16, 238); 
 }
 
+
+
 @media only screen and (min-width: 2561px){
     .skills-section{
         height: 40vh;
+    }
+}
+
+@media only screen and (min-width: 3561px) {
+    .skills-icon-container{
+        height: 15vh;
+    }
+    .skills-section{
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-width: 4561px){
+    .skills-section{
+        height: 30vh;
     }
 }
 
@@ -244,6 +261,15 @@
         display: flex;
         width: 80%;
         right: -40px;
+    }
+}
+@media only screen and (max-width: 1408px){
+    .mobile-height{
+        height: 60px;
+        
+    }
+    .icon-skills{
+        width: 130px;
     }
 }
 
@@ -265,16 +291,59 @@
         font-size: 75px;
     }
 }
+
+@media only screen and (max-width: 1405px)  and (max-height:1110px) {
+    .skills-section{
+        height: 90vh;
+    }
+    
+    .icon-skills{
+        width: 150px;
+    }
+
+    .mobile-height{
+    height: 50px
+    }
+  
+}
+
+
+
+
 @media only screen and (max-width: 1104px){
     .skills-icon-container{
       padding-left: 5px;
     }
 }
+@media only screen and (max-width: 1014px)  and (max-height:1110px){
+    .icon-skills{
+        width: 120px;
+       
+    }
+}
+@media only screen and (max-width: 1014px) {
+    .icon-skills{
+        width: 120px;
+      
+    }
+    .skill-icon-text{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-height: 1000px){
+    .skills-section{
+        height: 80vh;
+    }
+}
+@media only screen and (max-height: 900px){
+    .skills-section{
+        height: 120vh;
+    }
+}
 
 @media only screen and (max-width: 1000px){
 
-    
-  
 
     .skills-section{
         flex-direction: column-reverse;
@@ -286,6 +355,8 @@
     .skills-icon-container{
         width: 100%;
         height: 100%;
+       
+        gap: 10px;
     }
 
     .skills-text-container{
@@ -305,7 +376,7 @@
     }
     
     .skill-icon-text{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .h2{
@@ -313,7 +384,27 @@
     }
 }
 
+@media only screen and (max-width: 1000px)  and (max-height:1110px){
+    .icon-skills{
+        width: 140px;
+        
+        padding: 30px;
+    }
 
+}
+
+@media only screen and (max-width: 750px) and (max-height: 880px){
+      .skills-section{
+        height: 150vh;
+      }
+}
+
+@media only screen and (max-width: 916px){
+
+    .skills-icon-container{
+   gap: 20px;
+    }
+}
 
 @media only screen and (max-width: 900px){
     .skills-icon-container{
@@ -327,6 +418,16 @@
     .blue-line{
         display: flex;
         
+    }
+}
+@media only screen and (max-width: 800px){
+    .icon-skills{
+        width: 120px;
+        
+    }
+
+    .mobile-height{
+        height: 50px;
     }
 }
 
@@ -352,7 +453,11 @@
     .skills-icon-container{
         padding: 0px;
         width: 100%;
-        height: 60vh;
+        height: 30vh;
+      }
+
+      .skills-text-container{
+        height: 65vh;
       }
    
 }
@@ -360,8 +465,25 @@
     .skill-icon-text{
         font-size: 20px;
     }
-}
+    .skills-icon-container{
+       padding-left: 10px;
+    }
 
+}
+@media only screen and (max-width: 535px){
+    .icon-skills{
+        width: 100px;
+    }
+   
+    .skills-icon-container{
+    
+        justify-content: center;
+        padding: 5px;
+        width: 95%;
+        gap: 30px;
+      }
+
+}
 
 @media only screen and (max-width: 500px){
     .icon-skills{
@@ -388,7 +510,7 @@
 }
 @media only screen and (max-width: 480px){
     .skills-section{
-        height: 200vh;
+        height: 100vh;
     }
 }
 
@@ -396,17 +518,34 @@
 @media only screen and (max-width: 430px){
    
     .skills-section{
-        height: 130vh;
+        height: 150vh;
     }
     .text{
         font-size: 20px;
     }
+    .skills-text-container{
+        height: 90vh;
+    }
+    .skills-icon-container{
+        height: 90vh;
+    }
+
+
   
 }
 
 @media only screen and (max-width: 414px){
     .skills-section{
-       
+       height: 180vh;
+      align-items: flex-start;
+      gap: 60px;
+    }
+    .skills-text-container{
+        height: 90vh;
+    }
+
+    .skills-icon-container{
+        height: 90vh;
     }
 
 }
@@ -421,7 +560,7 @@
 
 @media only screen and (max-width: 375px){
     .skills-section{
-        height: 230vh;
+        height: 200vh;
         gap: 50px;
     }
     .skills-text-container{
@@ -435,5 +574,13 @@
     }
     .skills-icon-container{
         height: 100vh;
+        gap: 0px;
+    }
+    .mobile-height{
+        height: 40px;
+    }
+
+    .icon-skills{
+        width: 100px;
     }
 }

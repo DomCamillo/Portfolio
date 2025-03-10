@@ -251,6 +251,8 @@
 }
 
 }
+
+
 @media only screen and (max-width: 1000px){
 
 .headline-div{
@@ -289,6 +291,17 @@
     } 
 }
 
+@media only screen and (max-height: 1000px) and (max-width:1000px){
+    .contact-section{
+        height: 80vh;
+        gap: 50px;
+    }
+    .text-content{
+        padding-top: 0px;
+    }
+}
+
+
 @media only screen and (max-width: 800px){
     .headline-div{
     padding-left: 0px;
@@ -296,7 +309,7 @@
 }
 @media only screen and (max-width: 700px){
  .contact-section{
-    height: 80vh;
+    height: 70vh;
  }
  .main-content{
     height: 100vh;
