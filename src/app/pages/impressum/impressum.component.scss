@@ -1,7 +1,7 @@
 section{
-    max-width: 1920px; // oder 80%, je nach Design-Vorstellung
-    margin: 0 auto; // zentriert den Container
-    padding: 0 20px; // sorgt für etwas Abstand an den Rände
+    max-width: 1920px; 
+    margin: 0 auto; 
+    padding-left:  40px; 
     overflow-Y: scroll;
     height: 84.8vh;
 }
@@ -48,6 +48,7 @@ section{
     }
     section{
         height: 120vh;
+        padding-left: 0px;
       }
       .h2{
         font-size: 20px;

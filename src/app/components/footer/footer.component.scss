@@ -14,8 +14,8 @@ footer{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding-left:10px ;
-    padding-right:10px ;
+    padding-left:40px ;
+    padding-right:40px ;
     width: 100%;
     max-width: 1920px;
 }
@@ -48,6 +48,7 @@ svg{
 @media only screen and (min-width: 2561px){
     .footer-content{
         max-width: 1920px;
+     
     }
 }
 
