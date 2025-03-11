@@ -36,8 +36,7 @@ export class HomeComponent implements AfterViewInit {
  * Die Funktion scrollToSection nimmt einen Parameter section entgegen, der angibt, zu welchem Abschnitt gescrollt werden soll.
  * Ein switch-Statement wird verwendet, um das entsprechende DOM-Element basierend auf dem Wert von section auszuwählen.
  */
-    scrollToSection(section: string) {
-   
+    scrollToSection(section: string) { 
     let element: HTMLElement | null = null;
     switch (section) {
       case 'aboutMe':
@@ -62,16 +61,21 @@ export class HomeComponent implements AfterViewInit {
 /**
      * offset fuer das scrollen 
      */
-Offset(element: HTMLElement | null, section: string) {
+/* Offset(element: HTMLElement | null, section: string) {
   if (element) {
-    const isMobile = window.innerWidth < 600; 
-
-
     let offset = 10;
-    if (isMobile) {
-      offset = section === 'skills' ? 180 : 50; 
-    }
 
+    switch (innerWidth) {
+      case  600:
+        offset = section === 'skills' ? 80 : 50; 
+        break;
+      case  390:
+        offset = section === 'skills' ? 350 : 50; 
+        break;
+      default: 
+      offset = 50
+        break;
+    }
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
       top: elementPosition - offset,
@@ -79,4 +83,42 @@ Offset(element: HTMLElement | null, section: string) {
     });
   }
 }
+ */
+
+getOffset(section: string, innerWidth: number): number {
+  switch (innerWidth) {
+    case 600:
+      return section === 'skills' ? 80 : 50;
+      case 440:
+        return section === 'skills' ? 120 : 50;
+    case 430:
+      return section === 'skills' ? 200 : 50;
+      case 414:
+        return section === 'skills' ? 125 : 50;
+        case 390:
+        return section === 'skills' ? 550 : 50;
+    default:
+      return 50;
+  }
 }
+
+Offset(element: HTMLElement | null, section: string) {
+  if (element) {
+    const offset = this.getOffset(section, window.innerWidth);
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth',
+    });
+  }
+}
+
+
+
+}
+
+
+
+
+
+

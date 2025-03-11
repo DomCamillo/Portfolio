@@ -315,7 +315,24 @@
     height: 100vh;
  }
 }
+@media only screen and (max-width: 700px) and (max-height: 950px){
+    .contact-section{
+        height: 70vh;
+    }
+    .text-content{
+        height: 50vh;
+        margin-bottom: 20px;
+    }
+}
 
+@media only screen and (max-width: 700px) and (max-height: 800px){
+    .contact-section{
+        height: 100vh;
+    }
+  .main-content{
+    height: 120vh;
+  }
+}
 
 @media only screen and (max-width: 600px){
 .headline-div{
@@ -335,6 +352,7 @@
  
   .text-padding{
     padding: 0;
+
   }
     .main-content{
       width: 100%;
@@ -377,22 +395,37 @@
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 440px){
     .text{
         font-size: 20px;
     }
     .contact-section{
-        
-        height: 100vh;
+        height: 80vh;
         gap: 30px;
       }
 
       .main-content{
-        gap: 200px;
+        gap: 150px;
       }
 }
-@media only screen and (max-width: 400px){
-    
+@media only screen and (max-width: 430px){
+    .contact-section{
+        height: 85vh;
+        gap: 30px;
+      }
+}
+@media only screen and (max-width: 414px) and (max-height: 731px){
+    .contact-section{
+        height: 95vh;
+        gap: 30px;
+      }
+}
+
+@media only screen and (max-width: 390px){
+    .contact-section{
+        height: 90vh;
+        gap: 20px;
+      }
 }
 
 @media only screen and (max-width: 375px){
@@ -402,5 +435,12 @@
       }
       .text{
         font-size: 16px;
+    }
+    .h2{
+        font-size: 50px;
+        
+      }
+    .headline-div{
+        gap: 10px;
     }
 }

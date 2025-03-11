@@ -73,9 +73,14 @@
     }
 }
 
-@media only screen and (min-width: 6561px){
+@media only screen and (min-width: 6000px){
     .portfolio-section{
         height: 55vh;
+    }
+}
+@media only screen and (min-width: 8000px){
+    .portfolio-section{
+        height: 40vh;
     }
 }
 
@@ -101,11 +106,21 @@
     height: 190vh;
    }
 }
+
+
+
+
 @media only screen and (max-width: 1000px) {
     .portfolio-section{
         height: 150vh;
        }
 }
+@media only screen and (max-width: 1000px) and (max-height: 950px){
+    .portfolio-section{
+     height: 190vh;
+     gap: 0px;
+    }
+ }
 
 @media only screen and (max-width: 900px){
     .portfolio-section{
@@ -123,6 +138,13 @@
      
   
 }
+
+@media only screen and (max-width: 900px) and (max-height: 950px){
+    .portfolio-section{
+       height: 240vh;
+     }
+}
+
 @media only screen and (max-width: 900px) and (max-height: 900px){
     .portfolio-section{
      height: 280vh;
@@ -130,12 +152,6 @@
     }
  }
 
- @media only screen and (max-width: 1000px) and (max-height: 900px){
-    .portfolio-section{
-     height: 220vh;
-     gap: 0px;
-    }
- }
 
 
 @media only screen and (max-width: 700px){
@@ -149,9 +165,18 @@
      .margin{
         margin-bottom: 0px;
        }
-       
+}
 
-   
+
+@media only screen and (max-width: 700px) and (max-height: 1000px){
+    .portfolio-section{
+        height: 230vh;
+    }
+}
+@media only screen and (max-width: 700px) and (max-height: 800px){
+    .portfolio-section{
+        height: 250vh;
+    }
 }
 
 @media only screen and (max-width: 750px) and (max-height: 850px){
@@ -165,6 +190,9 @@
 @media only screen and (max-width: 600px){
     .margin{
         margin-bottom: 150px;
+       }
+       .portfolio-section{
+        overflow-x: hidden;
        }
      
 }
@@ -202,7 +230,15 @@
 @media only screen and (max-width: 414px){
     .portfolio-section{
        
-        height:200vh ;
+        height:210vh ;
+      
+     }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 731px){
+    .portfolio-section{
+       
+        height:250vh ;
       
      }
 }

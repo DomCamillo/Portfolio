@@ -133,6 +133,11 @@
        height: 40vh;
    }
 }
+ @media only screen and (min-width: 5000px) {
+   .about-me-section{
+       height: 30vh;
+   }
+}
 
 
 
@@ -264,6 +269,12 @@
      }
  
  }
+ @media only screen and (max-width: 700px) and (max-height: 950px){
+   .about-me-section{
+      height: 70vh;
+   }
+
+ }
 
  @media only screen and (max-width: 600px){
     .pb-image{
@@ -321,7 +332,7 @@
  }
  @media only screen and (max-width: 414px){
     .about-me-section{
-        height: 190vh;
+        height: 170vh;
        padding-bottom: 0px;
       
      }
