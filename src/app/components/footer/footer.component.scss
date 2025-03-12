@@ -1,81 +1,77 @@
-footer{
-    margin: 0;
-    min-height: 15vh;
-    max-height: 20vh;
-    width: 100%;
-    background: linear-gradient(to bottom, rgb(22, 33, 53),  rgb(22, 33, 53));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-   
+footer {
+  margin: 0;
+  min-height: 15vh;
+  max-height: 20vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(22, 33, 53), rgb(22, 33, 53));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.footer-content{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding-left:40px ;
-    padding-right:40px ;
-    width: 100%;
-    max-width: 1920px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  max-width: 1920px;
 }
-.icons{
-    display: flex;
-    gap: 40px;
-    padding: 20px;
- 
+.icons {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
 }
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
 }
-svg{
-    transition : all 200ms ease-in-out ;
+svg {
+  transition: all 200ms ease-in-out;
+}
+.font-size {
+    font-size: 14px;
 }
 
 .icons svg:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.footer-line {
+  height: 2px;
+  background-color: rgb(75, 250, 6);
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 2561px) {
+  .footer-content {
+    max-width: 1920px;
   }
-
-.footer-line{
-   
-    height: 2px;
-    background-color: rgb(75, 250, 6);
-    overflow: hidden;
 }
 
-
-@media only screen and (min-width: 2561px){
-    .footer-content{
-        max-width: 1920px;
-     
-    }
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
 }
 
-
-@media only screen and (max-width: 1024px) and (max-height: 1366px){
-   
+@media only screen and (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icons {
+    display: none;
+  }
+  h1 {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 650px){
-    footer{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .icons{
-       display: none;
-    }
-    h1{
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 450px){
-    .footer-content{
-        flex-direction: column;
-    }
-    .text{
-        font-size: 14px;
-    }
+@media only screen and (max-width: 450px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .text {
+    font-size: 14px;
+  }
 }

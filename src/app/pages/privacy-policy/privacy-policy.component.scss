@@ -1,111 +1,62 @@
-body{
-    background-color: #19263D;   
+body {
+  background-color: #19263d;
 }
 
-
-section{
-    max-width: 1920px; 
-    margin: 0 auto; 
-    padding-left:  40px; 
-    overflow: scroll;
-   background-color: #141D2F
+section {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 40px;
+  overflow: scroll;
+  background-color: #141d2f;
 }
 
-.h2{
-    font-size: 46px;
+.h2 {
+  font-size: 46px;
 }
 
-
-.text{
-    margin: 3px;
-    font-size: 20px;
+.text {
+  margin: 3px;
+  font-size: 20px;
 }
-.home-Link{
-    text-decoration: none;
-    font-size: 26px;
-}
-
-.content{
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-   gap: 15px;
-}
-@media only screen and (max-width: 1920px){
-    .text{
-        font-size: 18px;
-    }
+.home-Link {
+  text-decoration: none;
+  font-size: 26px;
 }
 
-@media only screen and (max-width: 1024px){
-    .h2{
-        font-size: 25px;
-    }
-    /* section{
-        height: 140vh;
-    } */
+.content {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-@media only screen and (max-width: 700px){
-    section{
-      
-        padding-bottom: 50px;
-       }
+@media only screen and (max-width: 1920px) {
+  .text {
+    font-size: 18px;
+  }
 }
 
-@media only screen and (max-width: 600px){
-
-
-    .h3{
-        font-size: 30px;
-    }
-    .content{
-        text-align: center;
-    }
-    section{
-       
-        padding-left: 0px;
-      }
-      .h2{
-        font-size: 23px;
-      }
-    
+@media only screen and (max-width: 1024px) {
+  .h2 {
+    font-size: 25px;
+  }
 }
-@media only screen and (max-width: 480px){
-    section{
-       /*  height: 380vh; */
-    }
-}
-@media only screen and (max-width: 440px){
-    section{
-      /*   height: 270vh; */
-    }
+@media only screen and (max-width: 700px) {
+  section {
+    padding-bottom: 50px;
+  }
 }
 
-@media only screen and (max-width: 430px){
-    section{
-       /*  height: 270vh; */
-    }
-}
-
-@media only screen and (max-width: 420px){
-    section{
-      /*   height: 420vh; */
-    }
-}
-@media only screen and (max-width: 414px){
-    section{
-    /*     height: 300vh; */
-    }
-}
-@media only screen and (max-width: 390px){
-    section{
-      /*   height: 330vh; */
-    }
-}
-
-@media only screen and (max-width: 375px){
-    section{
-  /*       height: 630vh; */
-      }
-    
+@media only screen and (max-width: 600px) {
+  .h3 {
+    font-size: 30px;
+  }
+  .content {
+    text-align: center;
+  }
+  section {
+    padding-left: 0px;
+  }
+  .h2 {
+    font-size: 23px;
+  }
 }

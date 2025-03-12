@@ -28,7 +28,6 @@
 .rotate {
   transform: rotate(270deg);
   margin: 0px;
- 
 }
 
 .second-box {
@@ -37,14 +36,12 @@
 
 .name-title {
   font-size: 75px;
- 
 }
 
 .h1-above {
   margin: 0px;
-
 }
-.font-de{
+.font-de {
   font-size: 50px;
 }
 
@@ -70,8 +67,8 @@
   transform: rotate(90deg);
   margin: 0px;
   height: 100px;
- 
-  animation: bounce infinite forwards 3s ;
+
+  animation: bounce infinite forwards 3s;
 }
 
 @keyframes bounce {
@@ -82,29 +79,21 @@
     transform: translateY(-50px) rotate(90deg); /* Nach oben springen */
   }
   50% {
- 
   }
   75% {
-  
   }
   100% {
     transform: translateY(-10px) rotate(90deg); /* Zurück zur Startposition */
   }
 }
 
-
-
-
-
-
 .flex {
   display: flex;
   align-items: center;
   position: relative;
-  
 }
-.svg{
- box-sizing: content-box;
+.svg {
+  box-sizing: content-box;
 }
 
 .green-line {
@@ -123,8 +112,8 @@
 .icons svg {
   padding: 20px;
 }
-svg{
-  transition : all 200ms ease-in-out ;
+svg {
+  transition: all 200ms ease-in-out;
 }
 
 .icons svg:hover {
@@ -132,212 +121,176 @@ svg{
   transform: translateY(-10px);
 }
 
-
-.animate-iam{
-  animation: iam 1s forwards ease-in ;
-  
+.animate-iam {
+  animation: iam 1s forwards ease-in;
 }
 
 @keyframes iam {
-0%{
-  opacity: 0;
-  transform: translateY(-50px) rotate(270deg);
-}
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) rotate(270deg);
+  }
 
-50%{
+  50% {
     opacity: 1;
-}
-100%{
-  
-  transform: translateY(0px) rotate(270deg);
-}
-
-
+  }
+  100% {
+    transform: translateY(0px) rotate(270deg);
+  }
 }
 
-
-.animate-h1{
-animation: h1 1s forwards ease-out ;
-animation-delay: 0.3s;
-opacity: 0;
+.animate-h1 {
+  animation: h1 1s forwards ease-out;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 @keyframes h1 {
-  0%{
+  0% {
     opacity: 0;
-    transform: translateX(50px) ;
+    transform: translateX(50px);
   }
-  
-  50%{
-      opacity: 1;
-  }
-  100%{
+
+  50% {
     opacity: 1;
-    transform: translateX(0px) ;
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
-
 .animate-front-end {
- animation: forntEnd 1s forwards ease-out;
- animation-delay:0.7s;
- opacity: 0;
+  animation: forntEnd 1s forwards ease-out;
+  animation-delay: 0.7s;
+  opacity: 0;
 }
 
 @keyframes forntEnd {
-  0%{
+  0% {
     opacity: 0;
-    transform: translateY(50px) ;
+    transform: translateY(50px);
   }
-  
-  50%{
-      opacity: 1;
-  }
-  100%{
+
+  50% {
     opacity: 1;
-    transform: translateY(0px) ;
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-.animate{
+.animate {
   opacity: 0;
-  animation: button 1s forwards ease-out ;
+  animation: button 1s forwards ease-out;
   animation-delay: 1.5s;
 }
 @keyframes button {
-  0%{
-   
-    /* transform: translateY(50px) ; */
+  0% {
   }
-  
-  50%{
+
+  50% {
     opacity: 0.5;
   }
-  70%{
+  70% {
     opacity: 0.7;
   }
-  100%{
+  100% {
     opacity: 1;
-    /* transform: translateY(0px)  */;
   }
 }
 
-
-.margin{
+.margin {
   margin: 0;
 }
 
-@media only screen and (max-width: 2020px){
- .flex{
-  padding: 45px;
- }
-}
-
-@media only screen and (max-width: 1100px){
-  .job{
+@media only screen and (max-width: 1100px) {
+  .job {
     font-size: 40px;
   }
   .h1-above {
     font-size: 50px;
   }
 
-  .rotate{
+  .rotate {
     font-size: 50px;
-  
   }
 
-  .first-box{
+  .first-box {
     padding-bottom: 17px;
   }
-
-
 }
 
-@media only screen and (max-width: 800px){
-/*  .above-the-fold-section{
-  height: 70vh;
- } */
-}
-
-
-@media only screen and (max-width: 600px){
-  .job{
+@media only screen and (max-width: 600px) {
+  .job {
     font-size: 25px;
   }
   .h1-above {
     font-size: 35px;
   }
 
-  .rotate{
+  .rotate {
     font-size: 30px;
-  
   }
-  .first-box{
+  .first-box {
     padding-bottom: 20px;
   }
-  .r{
+  .r {
     margin: 0px;
     height: 40px;
-    >p{
+    > p {
       margin: 0;
     }
   }
 
-  
-  
-    .svg{
-      height: 25px;
-    }
-    .font-de, .font-en {
-      font-size: 35px; /* Schriftgröße für noch kleinere Bildschirme */
-    }
-  
-
-} 
-@media only screen and (max-width: 450px){
-  .bottom-above-the-fold{
+  .svg {
+    height: 25px;
+  }
+  .font-de,
+  .font-en {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .bottom-above-the-fold {
     padding-bottom: 50px;
     height: 150px;
   }
-  .font-de, .font-en {
-    font-size: 30px; /* Schriftgröße für noch kleinere Bildschirme */
+  .font-de,
+  .font-en {
+    font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
   .above-the-fold-section {
     height: 100vh;
   }
-  .font-de, .font-en {
-    font-size: 28px; 
+  .font-de,
+  .font-en {
+    font-size: 28px;
   }
 
-  .flex{
+  .flex {
     padding: 0px;
   }
 }
-@media only screen and (max-width: 330px){
-
-.green-line{
+@media only screen and (max-width: 330px) {
+  .green-line {
     display: none;
   }
 
-  .flex{
+  .flex {
     padding: 0px;
   }
 
-.h1-above {
-  font-size: 26px;
+  .h1-above {
+    font-size: 26px;
+  }
+  .job {
+    font-size: 22px;
+  }
+  .rotate {
+    font-size: 24px !important;
+  }
 }
-.job{
-  font-size: 22px;
-}
-.rotate {
-  font-size: 24px !important;
-}
-
-
-
-}
-
