@@ -8,7 +8,6 @@ section{
     margin: 0 auto; 
     padding-left:  40px; 
     overflow: scroll;
-    height: 120vh;
    background-color: #141D2F
 }
 
@@ -42,9 +41,15 @@ section{
     .h2{
         font-size: 25px;
     }
-    section{
+    /* section{
         height: 140vh;
-    }
+    } */
+}
+@media only screen and (max-width: 700px){
+    section{
+      
+        padding-bottom: 50px;
+       }
 }
 
 @media only screen and (max-width: 600px){
@@ -57,7 +62,7 @@ section{
         text-align: center;
     }
     section{
-        height: 120vh;
+       
         padding-left: 0px;
       }
       .h2{
@@ -67,34 +72,40 @@ section{
 }
 @media only screen and (max-width: 480px){
     section{
-        height: 380vh;
+       /*  height: 380vh; */
     }
 }
+@media only screen and (max-width: 440px){
+    section{
+      /*   height: 270vh; */
+    }
+}
+
 @media only screen and (max-width: 430px){
     section{
-        height: 330vh;
+       /*  height: 270vh; */
     }
 }
 
 @media only screen and (max-width: 420px){
     section{
-        height: 420vh;
+      /*   height: 420vh; */
     }
 }
 @media only screen and (max-width: 414px){
     section{
-        height: 350vh;
+    /*     height: 300vh; */
     }
 }
 @media only screen and (max-width: 390px){
     section{
-        height: 400vh;
+      /*   height: 330vh; */
     }
 }
 
 @media only screen and (max-width: 375px){
     section{
-        height: 630vh;
+  /*       height: 630vh; */
       }
     
 }

@@ -25,7 +25,7 @@
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                         
-                    <div class="input-div" ><input #name="ngModel"  [(ngModel)]="contactData.name" name="name" placeholder="Your name" class="input" type="text"  >
+                    <div class="input-div" ><input  #name="ngModel"  [(ngModel)]="contactData.name" name="name" placeholder="Your name" class="input" type="text"  >
                         <br>
                         @if (!name.valid && name.touched ){
                             <span class="message-fail-text">Please enter a Name</span>
