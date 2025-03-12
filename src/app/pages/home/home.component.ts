@@ -59,52 +59,22 @@ export class HomeComponent implements AfterViewInit {
     
 }
 /**
-     * offset fuer das scrollen 
+     * offset for scrolling
      */
-/* Offset(element: HTMLElement | null, section: string) {
-  if (element) {
-    let offset = 10;
 
-    switch (innerWidth) {
-      case  600:
-        offset = section === 'skills' ? 80 : 50; 
-        break;
-      case  390:
-        offset = section === 'skills' ? 350 : 50; 
-        break;
-      default: 
-      offset = 50
-        break;
-    }
-    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: 'smooth',
-    });
-  }
-}
- */
-
-getOffset(section: string, innerWidth: number): number {
-  switch (innerWidth) {
+ 
+ getOffset(section: string, innerWidth: number): number {
+  switch (innerWidth ) {
     case 600:
-      return section === 'skills' ? 80 : 50;
-      case 440:
-        return section === 'skills' ? 120 : 50;
-    case 430:
-      return section === 'skills' ? 200 : 50;
-      case 414:
-        return section === 'skills' ? 125 : 50;
-        case 390:
-        return section === 'skills' ? 550 : 50;
+      return section === 'skills' ? 50 : 0;
     default:
       return 50;
   }
 }
-
-Offset(element: HTMLElement | null, section: string) {
+ 
+ Offset(element: HTMLElement | null, section: string) {
   if (element) {
-    const offset = this.getOffset(section, window.innerWidth);
+     const offset = this.getOffset(section, window.innerWidth); 
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
       top: elementPosition - offset,
@@ -112,8 +82,6 @@ Offset(element: HTMLElement | null, section: string) {
     });
   }
 }
-
-
 
 }
 

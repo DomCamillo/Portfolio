@@ -2,11 +2,12 @@ section {
   max-width: 1920px;
   margin: 0 auto;
   padding-left: 40px;
-  overflow-y: scroll;
-  height: 84.4vh;
+  overflow: scroll;
+
 }
 
 .content {
+    
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -46,7 +47,8 @@ section {
     font-size: 30px;
   }
   .content {
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
   }
   section {
     padding-left: 0px;
