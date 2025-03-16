@@ -25,14 +25,14 @@
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                         
-                    <div class="input-div" ><input  #name="ngModel"  [(ngModel)]="contactData.name" name="name" placeholder="Your name" class="input" type="text"  >
+                    <div class="input-div" ><input  #name="ngModel"  [(ngModel)]="contactData.name" name="name" placeholder="{{formName}}" class="input" type="text"  >
                         <br>
                         @if (!name.valid && name.touched ){
                             <span class="message-fail-text">Please enter a Name</span>
                         }
                     </div>
                    
-                    <div class="input-div" ><input #email="ngModel" required email [(ngModel)]="contactData.email" name="email" placeholder="Your Email"  class="input" type="email"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(de|at|com|ch|net|org|gov|edu|info|biz)$">
+                    <div class="input-div" ><input #email="ngModel" required email [(ngModel)]="contactData.email" name="email" placeholder="{{formEmail}}"  class="input" type="email"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(de|at|com|ch|net|org|gov|edu|info|biz)$">
                         <br>
                         @if (email.invalid && email.touched) {
                             @if (email.errors?.['required']) {
@@ -44,7 +44,7 @@
                           }
                     </div>
                    
-                    <div class="input-div" ><textarea class="text-area" minlength="1" #message="ngModel" required [(ngModel)]="contactData.message" name="message" placeholder="Your message" class="input input-text" type="message"></textarea> 
+                    <div class="input-div" ><textarea class="text-area" minlength="1" #message="ngModel" required [(ngModel)]="contactData.message" name="message" placeholder="{{formMessage}}" class="input input-text" type="message"></textarea> 
                         <br> 
                         @if (!message.valid && message.touched ){
                             <span class="message-fail-text">Please enter a Message</span>

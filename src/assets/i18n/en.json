@@ -50,7 +50,10 @@
     "contactMe": " Contact Me",
     "privacyPolicy": "I have read the",
     "privacyPolicy2": " and agree to the processing of my data as described.",
-    "privacyPolicyPurpel": "Privacy Policy"
+    "privacyPolicyPurpel": "Privacy Policy",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formNachricht": "Your Message"
 },
 
 

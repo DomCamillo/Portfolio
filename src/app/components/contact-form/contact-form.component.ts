@@ -46,6 +46,15 @@ export class ContactFormComponent {
   get privacyPolicyPurpel(): string {
     return this.translate.instant('contactFrom.privacyPolicyPurpel');
   }
+  get formName(): string {
+    return this.translate.instant('contactFrom.formName');
+  }
+  get formEmail(): string {
+    return this.translate.instant('contactFrom.formEmail');
+  }
+  get formMessage(): string {
+    return this.translate.instant('contactFrom.formNachricht');
+  }
 
   scrollToSection(event: Event, section: string) {
     event.preventDefault(); // Verhindert das Standardverhalten des Links
